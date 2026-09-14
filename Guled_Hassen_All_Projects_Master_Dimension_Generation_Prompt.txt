@@ -1,0 +1,394 @@
+GUled Hassen Portfolio — MASTER PROMPT
+ALL PROJECTS — PROJECT IMAGE DIMENSIONS & CASE-STUDY VISUAL SYSTEM
+
+PURPOSE
+Generate a consistent visual asset system for every project in the Guled Hassen professional portfolio. Each project must use the same visual logic, dimension standards, typography hierarchy, technical-grid language, and case-study structure while allowing each project to retain its own identity.
+
+SOURCE PROJECT SET
+Use the current portfolio project codes and titles as the project set:
+
+01 — UP
+Universal Project Master System
+Category: Digital Systems
+
+02 — OR
+ORCA 2019 Construction Industry Market Survey Data
+Category: Construction Data System / Research / Data
+
+03 — PD
+Portfolio Dashboard
+Category: Digital Systems / Portfolio
+
+04 — NW
+Furniture & Metalwork — NURE·WORKS
+Category: Engineering & Industrial
+
+05 — ME
+Use the exact project title and category currently defined in the portfolio source. Do not invent project information.
+
+06 — MC
+Use the exact project title and category currently defined in the portfolio source. Do not invent project information.
+
+07 — SH
+SHAGGAA
+Category: Brand & Product
+
+08 — SW
+Street Wear
+Category: Brand & Product
+
+If a project title, category, description, or visual content is not available, keep it as a neutral placeholder rather than inventing information.
+
+GLOBAL VISUAL DIRECTION
+
+Create a professional portfolio design-specification board and corresponding project visual assets.
+
+Style:
+- Minimal
+- Editorial
+- Technical
+- Professional
+- Structured
+- Modern
+- Clean
+- Engineering/product-system inspired
+- Premium but restrained
+- Strong information hierarchy
+- Generous whitespace
+- Fine technical grid
+- Crisp sans-serif typography
+- Black / charcoal / warm off-white foundation
+- Restrained gold/yellow accent where appropriate
+- No unnecessary decoration
+- No people unless the actual project requires them
+- No generic stock photography
+- No fake awards, statistics, clients, testimonials, or achievements
+
+CORE PRINCIPLES
+Structure before surface.
+Systems over pages.
+Clarity over decoration.
+The work is the primary visual element.
+
+MASTER DIMENSION SYSTEM
+
+Every project must be designed from one master image specification.
+
+A. HERO / MASTER IMAGE
+Dimension: 1920 × 1080 px
+Ratio: 16:9
+Use:
+- Project hero
+- Main project cover
+- Individual case-study header
+- Main portfolio visual
+
+B. DESKTOP PROJECT CARD
+Dimension: 1440 × 810 px
+Ratio: 16:9
+Use:
+- Featured Projects
+- All Projects
+- Portfolio work-library cards
+
+C. MOBILE PROJECT CROP
+Dimension: 1080 × 1350 px
+Ratio: 4:5
+Use:
+- Mobile portfolio presentation
+- Mobile project card
+- Social/portrait-compatible portfolio preview
+
+D. SUPPORTING CASE-STUDY IMAGES
+Dimension: 1800 × 1200 px
+Ratio: 3:2
+Use:
+- Interface screenshots
+- Process images
+- Technical diagrams
+- Detail views
+- Research material
+- Documentation
+- Before/after visuals
+- Supporting project evidence
+
+E. OPTIONAL SQUARE SOCIAL / PREVIEW
+Dimension: 1200 × 1200 px
+Ratio: 1:1
+Use:
+- Social sharing
+- Profile/project preview
+- Alternative project presentation
+
+PROJECT ASSET PACKAGE
+
+Generate or plan a minimum of 8 visual assets per project:
+
+01 — HERO
+1920 × 1080 — 16:9
+Main project identity.
+
+02 — OVERVIEW
+1920 × 1080 — 16:9
+Full project/product/interface overview.
+
+03 — STRUCTURE
+1800 × 1200 — 3:2
+Architecture, information structure, system map, planning or workflow.
+
+04 — INTERFACE / PRODUCT DETAIL
+1800 × 1200 — 3:2
+Important interface, product or visual detail.
+
+05 — MOBILE
+1080 × 1350 — 4:5
+Mobile or responsive presentation.
+
+06 — DETAIL
+1800 × 1200 — 3:2
+Close-up of an important feature or component.
+
+07 — PROCESS
+1800 × 1200 — 3:2
+Research, wireframe, development, design process or documentation.
+
+08 — FINAL
+1920 × 1080 — 16:9
+Final product/result presentation.
+
+PLACEHOLDER SYSTEM
+
+When a final image is not available, create an intentional project placeholder instead of an empty image box.
+
+Placeholder structure:
+
+Top-left:
+PROJECT CATEGORY
+
+Top-right:
+PROJECT NUMBER
+Example: 01 / 08
+
+Bottom-left:
+PROJECT MONOGRAM
+Example: UP
+
+Optional bottom-right:
+Small technical line/detail.
+
+Placeholder appearance:
+- Warm off-white background
+- Very subtle technical grid
+- Thin border
+- Black/dark typography
+- Minimal accent
+- Large project monogram
+- No random imagery
+- No invented project claims
+
+PROJECT CARD STRUCTURE
+
+Every project card should contain:
+
+IMAGE / PLACEHOLDER
+
+PROJECT NUMBER
+01 / 08
+
+PROJECT MONOGRAM
+UP
+
+PROJECT TITLE
+
+Short description
+
+CATEGORY / DISCIPLINE
+
+ROLE / CAPABILITIES when available
+
+VIEW PROJECT →
+
+CASE-STUDY STRUCTURE
+
+For every project that has sufficient information, prepare:
+
+01 — PROJECT HERO
+- Project code
+- Project title
+- Category
+- Role
+- Main 1920 × 1080 visual
+
+02 — PROJECT OVERVIEW
+- What is the project?
+- Context
+- Purpose
+
+03 — PROBLEM
+- What needed to be solved?
+- What was difficult?
+- What opportunity existed?
+
+04 — APPROACH
+- How was the problem structured?
+- Research
+- Planning
+- Information architecture
+- Design strategy
+
+05 — SOLUTION
+- What was created?
+- Main system/product
+- Key features
+
+06 — PROCESS
+- Research
+- Structure
+- Design
+- Development
+- Testing
+- Documentation
+
+07 — FINAL PRODUCT
+- Main screenshots
+- Product visuals
+- Interface views
+- Technical/detail views
+
+08 — OUTCOME
+- What exists now?
+- What was improved?
+- What can be extended?
+
+09 — PROJECT LINK
+- Live project URL when available
+
+IMAGE COMPOSITION RULES
+
+For each project:
+- Keep important content inside a safe central area.
+- Avoid placing critical text close to crop edges.
+- Maintain consistent margins.
+- Use the same visual hierarchy across all projects.
+- The project itself must dominate the image.
+- Do not overfill the frame.
+- Use realistic UI/product screenshots when actual project material is available.
+- Never fabricate screenshots and present them as real project evidence.
+- For concept visuals, clearly treat them as concept/mockup material.
+
+RESPONSIVE RULE
+
+The 1920 × 1080 hero is the master source.
+
+Create:
+1920 × 1080 → 1440 × 810 desktop
+1920 × 1080 → 1080 × 1350 mobile where cropping permits
+Supporting visuals → 1800 × 1200
+
+Do not distort images.
+Do not stretch screenshots.
+Use intelligent cropping and safe areas.
+
+FILE NAMING SYSTEM
+
+Use:
+
+/images/projects/
+    /UP/
+        UP-01-hero.webp
+        UP-02-overview.webp
+        UP-03-structure.webp
+        UP-04-interface.webp
+        UP-05-mobile.webp
+        UP-06-detail.webp
+        UP-07-process.webp
+        UP-08-final.webp
+
+    /OR/
+        OR-01-hero.webp
+        OR-02-overview.webp
+        OR-03-structure.webp
+        OR-04-interface.webp
+        OR-05-mobile.webp
+        OR-06-detail.webp
+        OR-07-process.webp
+        OR-08-final.webp
+
+    /PD/
+        PD-01-hero.webp
+        PD-02-overview.webp
+        ...
+
+Repeat the same structure for NW, ME, MC, SH, SW and future projects.
+
+DESIGN-SPEC BOARD
+
+Create one master presentation board showing:
+
+1. Hero image
+2. Desktop project card
+3. Mobile crop
+4. Supporting case-study images
+5. Dimension summary
+6. Placeholder example
+7. Project-code system
+8. Image safe-area rules
+9. File naming system
+10. Design principles
+
+DIMENSION SUMMARY TO DISPLAY
+
+Hero / Master:
+1920 × 1080
+16:9
+Project page / main visual
+
+Desktop Card:
+1440 × 810
+16:9
+Featured / All Projects
+
+Mobile:
+1080 × 1350
+4:5
+Mobile portfolio view
+
+Supporting:
+1800 × 1200
+3:2
+Case study / details
+
+Square:
+1200 × 1200
+1:1
+Optional social/preview
+
+OUTPUT REQUIREMENTS
+
+For each project:
+- Produce a consistent hero concept.
+- Produce a desktop card concept.
+- Produce a mobile crop concept.
+- Produce supporting-image concepts.
+- Produce a placeholder version when final assets are unavailable.
+- Preserve the project's real identity and information.
+- Keep all dimensions exact.
+- Keep the same overall portfolio visual system.
+
+FINAL VISUAL GOAL
+
+The complete portfolio should look like one coherent professional system, not eight unrelated websites.
+
+Every project should feel like:
+
+PROJECT ID
+→ PROJECT VISUAL
+→ PROJECT CARD
+→ CASE STUDY
+→ PROCESS
+→ FINAL RESULT
+
+The result must be scalable so new projects can be added without redesigning the entire portfolio.
+
+IMPORTANT
+Do not invent missing project facts. Where source information is unavailable, use neutral placeholders and mark the content as requiring project documentation.
