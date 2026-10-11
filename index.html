@@ -1,0 +1,2941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Guled Hassen — Engineer · Digital Product Builder · Web Developer</title>
+<meta name="description" content="Guled Hassen — Engineer, Digital Product Builder and Web Developer. Building practical digital systems, business platforms, data tools and product experiences for real-world problems.">
+<meta name="author" content="Guled Hassen">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0E1112">
+<link rel="canonical" href="https://guledz.github.io/Guledhassen/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Guled Hassen">
+<meta property="og:title" content="Guled Hassen — Engineer · Digital Product Builder · Web Developer">
+<meta property="og:description" content="Building practical digital systems, business platforms, data tools and product experiences for real-world problems.">
+<meta property="og:url" content="https://guledz.github.io/Guledhassen/">
+<meta property="og:image" content="https://guledz.github.io/Guledhassen/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Guled Hassen — Engineer · Digital Product Builder · Web Developer">
+<meta name="twitter:description" content="Building practical digital systems, business platforms, data tools and product experiences for real-world problems.">
+<meta name="twitter:image" content="https://guledz.github.io/Guledhassen/og-cover.png">
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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d7rPgERLcGQ1JD148GDasmWLOTDl6xplH4JCQ0Np165dtG3bNoqMjPQjyPc+h8NBq1avpkOHDplM9d7nC2vOOQkwOjdrAu3++E8+Y3mi5f0Goz4ZejvRvEnu1KhwSht81wz2D2aKRYDNinZdbts1OzmOaMF96kOd48yxOGGcXmt+5MgRWrp0aYtUb1IXIQRZDFdotVrp9ddfp7y8PFq1apXfMKXdbqdnn32WTp48Se+99x6FhISYa3LeMp3iVRPvWNy6PolEucdo2LgJfkbXe31qx2ii+TPURamJ5IyK+dZutXjH6//+GDwAduDrr9sFhYVX7BjeW6Onp2i9w0P8LPW9991H3333HW3dupVKSkropZde8peW2UluiRe819u3b0/vvfce5eTk0HPPPUePPPIInTp1ij766CNKTk728wa+audrHAHQS72T6cq0QfSHiaPo6+++o3fWrKHo6GjzenKrQHI9OUH7fmx/zREUUrVg6dJYAOzmIalfHV54DL9n4pioViF07cER7pJZY/V2AVZK7HIbrVq5kpYuXUqxsR4f3L1bNzp48CDt3r3bhLcJWZ+oTNykFh07dqRjx36gy5cvU0/D53ufFT65SMvMj4f4cLuFvhjZj766O506BLWM5I8fP57eXrOGssaOpTCngy7cO1yvnjXGndA6hBLSeo/7R9C/eTBekoVAXEr3RaltW5PryXGuK3Mm0kPTplBEVFSLMfMhaPbs2XT48GEaOXKk6d+FqbctYaoQgmw2T7//hRdeoPfff58AkM1mM6M637jD64YBUGZ0KH0+vA9NS2rnswfJDMcB0JDMTLr81DSip8a5BrULJ0t41EuyEOY81G85JJuiwBYZtX5ouzCiZya7Do1JpxCJEzgniyR5YCkJM8CJioqiN954g5588kmyWq2m67s5QlMUD0KWLl1KGzZs8FhxczTWR/oGYYrgND2xHS1IS6I2No8BloyYgjPmGaPlnIIUmXYOTSV6epJrcmI7gjVgg0WWvMT/5qFpBkDYLQoQFLL57ti2RM9Pd51/cCQlBTvMjYmb4gIANGjQIHrwwQcpMjLStMp+qalx74IFC2jt2rXmbLB/NOchrrVVoVHtI8nXDslet2wEOQAoxmGnk1MGE82f4bqvUyyBSZ94B77/nW+jGABuVWRAsa4fFB1KjU/co9Y9OV7Pioswoe6tH3jnA70urUePHhQcHOzDBO6XQzz99NPmdLiiKH4ZJ2OMbJKgjkEBZJeFT4baEi16VSMjKpSKHx2l07xJ6j3tIwnABm9s84+I5/9oah4ANbncXNHcj3xXULYkbfMecaWyln01caC28s5usAoOt6Z72uTGJKe3E3Tq1CnU19cbO/CUrX23o6qq3/QY86vdAy6dcL66Hg1u3az/caMcpmo6GAEv9uqM/VOHaC5dZ30/3i0+u1S4VBb8QcaYf2X07/n9fxYKGpGQON9X3NCU86fcy5lhFsUxp+9t2pT4CFyormdnK2vNuV0OMru7mqYbNbqW5iXnHLquIzU1FVarFfv27YMQvOVen34G5xycMXCjBKfqOnQi3BnZBttH9tOn9EzSP8vJF6O/OFRxtqrufomzNapO4p8h/jcxAADpRBJn7EyzLH/65flrCaevlyaNah/JZva9TU1vHcgu1zSyyzX1RpnaM6jIGW8ZXTGo8zKge/fusFgsOHjwIAQXZoMTjIHDMyvEWQvROhFSw0Kwpn93WjkkTVOIxGPfHOMLvj+zq17V7hGMHdKIpN/yHeFv/cxMJ0AwTasQjH2cV1mb/0FOfreGhqbWM5Ji2CNpnbS7IkPRqGnsWl0jGtyquXEyoMsZgyQEQDpSunaFzWrBD0ePQJIEQJ5SpmY84z3tsoSs+Ai81b+7vnxAD71TYABfeSyPT/vmh8tHblTM5Yw9A6BS/xc+ovxXrSMHAMGYrnlSy1kRDtvjDyXHtZuT0gHhrYLgrm1Qd1wuYl9cLuJHiipYfk09VN2//zhq8lSEhoXigzff+NUXK7FOO3qHt6K749rqo+MiyBEUIFXW1OPdM5fw3pn8gss19WsBvCMYq9KIvLZM/1es/L9zCAZonDFoRMEAJtsV+f4h7UJ7T0+KwfB2YQhwBgCqRlU19XpeVT3OVtawq40udqO2HilpacxuteHI4UMUHmBDdICVEp0B1DkkAKFBDg5FYq7aRnxzrQR/OnsV314r+bG62bUJwCeCsUoDWf/3n87eylX6MAIAUgGMDLQog3u0CeraOzwkqHd4K9wW4kSU04YAIQBJAKrq6cDICqATGl1uXK9vRF5lLY6VVOFocWXNqfKqn8sbmvcA+ArAccEYfAj///vx9K0CJwao3Nt+9jAjFkAPAD0BdAm0KnGtFDks0KI4LZxZOAMaVbW5TqXaisbm0qpmVz6AXOPz+ZMArnirtwbh0n/y8/n/BxLyEExUNZSPAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   1. TOKENS
+   ============================================================ */
+:root{
+  /* Monochrome base */
+  --ink:#0E1112;
+  --ink-2:#1A1D1E;
+  --ink-3:#3C4346;
+  --paper:#F4F3EF;
+  --paper-2:#EBE9E3;
+  --surface:#FFFFFF;
+  --surface-2:#FAF9F6;
+
+  /* Taupe accent */
+  --taupe:#FF7A63;
+  --taupe-deep:#C8452F;
+  --taupe-soft:#FFB4A6;
+
+  /* Lines */
+  --line-dark:rgba(244,243,239,.16);
+  --line-dark-strong:rgba(244,243,239,.32);
+  --line-light:rgba(14,17,18,.12);
+  --line-light-strong:rgba(14,17,18,.28);
+
+  /* Text on dark / light */
+  --on-dark:#F4F3EF;
+  --on-dark-soft:#A8A6A0;
+  --on-dark-mute:#6E767A;
+  --on-light:#0E1112;
+  --on-light-soft:#5A6266;
+  --on-light-mute:#8A9095;
+
+  --font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+
+  --maxw:1400px;
+  --gutter:clamp(20px,4.5vw,64px);
+  --header-h:64px;
+
+  --ease:cubic-bezier(.2,.6,.2,1);
+}
+
+/* ============================================================
+   2. RESET / BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--on-light);
+  font-family:var(--font-sans);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:clip;
+  -webkit-tap-highlight-color:transparent;
+  font-feature-settings:"ss01","cv11";
+}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--taupe);outline-offset:3px}
+img{max-width:100%;display:block}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+
+.container{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:max(var(--gutter),env(safe-area-inset-left)) max(var(--gutter),env(safe-area-inset-right));
+}
+
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--ink);color:var(--on-dark);
+  padding:12px 18px;
+  font-family:var(--font-mono);font-size:11px;
+  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+}
+.skip-link:focus{left:0}
+
+.vh{
+  position:absolute!important;width:1px;height:1px;
+  padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* ============================================================
+   3. TYPOGRAPHY SYSTEM
+   ------------------------------------------------------------
+   Extreme scale contrast: mega display headings paired with
+   small tracked-out labels. Tight tracking on large sizes.
+   ============================================================ */
+
+/* Massive hero display */
+.t-mega{
+  font-size:clamp(3.8rem,13vw,13rem);
+  line-height:.84;
+  letter-spacing:-.055em;
+  font-weight:800;
+  margin:0;
+}
+
+/* Section display headings */
+.t-display{
+  font-size:clamp(2.6rem,7.5vw,6.5rem);
+  line-height:.92;
+  letter-spacing:-.045em;
+  font-weight:800;
+}
+
+/* Giant numeric marker */
+.t-num{
+  font-size:clamp(7rem,22vw,20rem);
+  line-height:.78;
+  letter-spacing:-.06em;
+  font-weight:300;
+  font-feature-settings:"tnum";
+}
+
+/* Small caps pill label */
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 13px;
+  border-radius:999px;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-weight:500;
+  line-height:1;
+  border:1px solid currentColor;
+  white-space:nowrap;
+}
+.pill-dark{
+  color:var(--on-dark);
+  border-color:var(--line-dark-strong);
+}
+.pill-light{
+  color:var(--on-light-soft);
+  border-color:var(--line-light-strong);
+}
+.pill-taupe{
+  color:var(--taupe);
+  border-color:var(--taupe);
+}
+.pill-solid-dark{
+  background:var(--ink);
+  color:var(--on-dark);
+  border-color:var(--ink);
+}
+.pill-solid-taupe{
+  background:var(--taupe);
+  color:var(--ink);
+  border-color:var(--taupe);
+}
+
+/* Eyebrow / meta line */
+.meta-line{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+}
+
+/* ============================================================
+   4. BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.55em;
+  min-height:48px;
+  padding:14px 22px;
+  border:1px solid transparent;
+  border-radius:999px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:500;
+  text-decoration:none;
+  cursor:pointer;
+  transition:all .2s var(--ease);
+  white-space:nowrap;
+}
+.btn-taupe{
+  background:var(--taupe);
+  color:var(--ink);
+  border-color:var(--taupe);
+}
+.btn-taupe:hover{
+  background:var(--ink);
+  border-color:var(--ink);
+  color:var(--on-dark);
+}
+.btn-ghost-dark{
+  background:transparent;
+  border-color:var(--line-dark-strong);
+  color:var(--on-dark);
+}
+.btn-ghost-dark:hover{
+  border-color:var(--on-dark);
+  background:rgba(255,255,255,.06);
+}
+.btn-ghost-light{
+  background:transparent;
+  border-color:var(--line-light-strong);
+  color:var(--on-light);
+}
+.btn-ghost-light:hover{
+  border-color:var(--ink);
+  background:var(--ink);
+  color:var(--on-dark);
+}
+.btn-ink{
+  background:var(--ink);
+  color:var(--on-dark);
+  border-color:var(--ink);
+}
+.btn-ink:hover{
+  background:var(--taupe);
+  border-color:var(--taupe);
+  color:var(--ink);
+}
+
+/* Circular arrow button */
+.circle-btn{
+  width:52px;height:52px;
+  border-radius:999px;
+  border:1px solid currentColor;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  cursor:pointer;
+  transition:all .25s var(--ease);
+  flex-shrink:0;
+}
+.circle-btn:hover{
+  background:var(--taupe);
+  color:var(--ink);
+  border-color:var(--taupe);
+  transform:scale(1.05);
+}
+
+/* ============================================================
+   5. HEADER / NAV
+   ============================================================ */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:rgba(14,17,18,.9);
+  -webkit-backdrop-filter:saturate(180%) blur(12px);
+  backdrop-filter:saturate(180%) blur(12px);
+  color:var(--on-dark);
+  border-bottom:1px solid var(--line-dark);
+  padding-top:env(safe-area-inset-top,0px);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  min-height:var(--header-h);
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:11px;
+  text-decoration:none;
+  flex-shrink:0;
+}
+.brand-mark{
+  width:30px;height:30px;
+  display:grid;place-items:center;
+  background:var(--taupe);
+  color:var(--ink);
+  font-family:var(--font-mono);
+  font-size:11px;
+  font-weight:700;
+  border-radius:999px;
+  letter-spacing:.02em;
+}
+.brand-name{
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:-.01em;
+  color:var(--on-dark);
+}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:clamp(10px,2vw,26px);
+}
+.nav-link{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--on-dark-soft);
+  padding:14px 0;
+  border-bottom:2px solid transparent;
+  transition:color .18s var(--ease),border-color .18s var(--ease);
+  white-space:nowrap;
+}
+.nav-link:hover{color:var(--on-dark)}
+.nav-link[aria-current="true"]{
+  color:var(--taupe);
+  border-bottom-color:var(--taupe);
+}
+@media (max-width:720px){
+  .nav-home{display:none}
+  .brand-name{display:none}
+  .header-inner{gap:12px}
+  .nav{
+    gap:18px;min-width:0;flex:1;justify-content:flex-end;
+    overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  }
+  .nav::-webkit-scrollbar{display:none}
+  .nav-link{font-size:10px;letter-spacing:.1em}
+}
+@media (max-width:380px){.nav{gap:14px}.nav-link{font-size:9.5px;letter-spacing:.08em}}
+
+/* ============================================================
+   6. HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  background:var(--ink);
+  color:var(--on-dark);
+  padding-block:clamp(56px,7vw,104px) clamp(48px,6vw,88px);
+  overflow:hidden;
+  min-height:min(calc(100svh - var(--header-h)),920px);
+  display:flex;
+  align-items:center;
+}
+.hero::before{
+  content:"";
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(to right,rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(circle at 30% 50%,#000 0%,transparent 78%);
+  mask-image:radial-gradient(circle at 30% 50%,#000 0%,transparent 78%);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(260px,32vw);
+  align-items:center;
+  gap:clamp(32px,5vw,80px);
+  width:100%;
+}
+.hero-copy{min-width:0}
+.hero-topline{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:clamp(28px,4vw,52px);
+  flex-wrap:wrap;
+}
+.hero-eyebrow{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--on-dark-soft);
+}
+.hero-eyebrow .accent{color:var(--taupe)}
+
+.hero-name{
+  color:var(--on-dark);
+  margin-bottom:22px;
+}
+.hero-name em{
+  font-style:normal;
+  color:transparent;
+  -webkit-text-stroke:2px var(--taupe);
+  paint-order:stroke fill;
+  font-weight:800;
+}
+
+.hero-role{
+  font-size:clamp(1rem,1.7vw,1.35rem);
+  line-height:1.35;
+  color:var(--on-dark);
+  letter-spacing:-.005em;
+  margin-bottom:18px;
+  max-width:32ch;
+  font-weight:500;
+}
+.hero-role .sep{color:var(--taupe);padding-inline:3px}
+
+.hero-lede{
+  max-width:54ch;
+  color:var(--on-dark-soft);
+  font-size:clamp(.95rem,1.25vw,1.05rem);
+  margin-bottom:clamp(28px,3.5vw,40px);
+}
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:clamp(32px,4vw,52px);
+}
+
+/* Hero bento stats */
+.hero-bento{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--line-dark);
+  border:1px solid var(--line-dark);
+  border-radius:14px;
+  overflow:hidden;
+  max-width:640px;
+}
+.hero-stat{
+  background:var(--ink);
+  padding:clamp(14px,2vw,22px);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.hero-stat strong{
+  font-size:clamp(1.35rem,2.4vw,1.9rem);
+  font-weight:700;
+  letter-spacing:-.035em;
+  color:var(--on-dark);
+  line-height:1;
+}
+.hero-stat span{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--on-dark-soft);
+}
+.hero-stat--wide strong{font-size:clamp(1.05rem,1.9vw,1.35rem);line-height:1.15}
+
+/* Hero portrait */
+.hero-photo{margin:0;position:relative}
+.hero-photo-frame{
+  position:relative;
+  aspect-ratio:4/5;
+  overflow:hidden;
+  isolation:isolate;
+  border:1px solid var(--line-dark-strong);
+  background:var(--ink-2);
+  border-radius:14px;
+}
+.hero-photo-frame::before{
+  content:"";
+  position:absolute;inset:0;z-index:2;
+  background:linear-gradient(180deg,transparent 55%,rgba(14,17,18,.55) 100%);
+  pointer-events:none;
+}
+.hero-photo-frame::after{
+  content:"";
+  position:absolute;top:0;right:0;
+  width:64px;height:64px;
+  border-top:3px solid var(--taupe);
+  border-right:3px solid var(--taupe);
+  z-index:3;
+}
+.hero-photo-frame img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
+  filter:grayscale(100%) contrast(1.05);
+  transition:transform .8s var(--ease),filter .4s var(--ease);
+}
+@media (hover:hover){.hero-photo:hover img{transform:scale(1.03)}}
+.hero-photo-frame.is-fallback img{display:none}
+.hero-photo-frame.is-fallback::selection{background:none}
+.hero-fallback{
+  position:absolute;inset:0;display:none;place-items:center;z-index:1;
+  font-size:clamp(5rem,16vw,9rem);font-weight:800;letter-spacing:-.06em;color:var(--taupe);
+  background:radial-gradient(circle at 30% 20%,var(--ink-3),var(--ink-2));
+}
+.hero-photo-frame.is-fallback .hero-fallback{display:grid}
+.hero-photo-number,
+.hero-photo-caption{
+  position:absolute;z-index:4;
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-dark);
+}
+.hero-photo-number{top:16px;left:18px}
+.hero-photo-caption{bottom:16px;left:18px;color:var(--taupe)}
+.hero-photo figcaption{
+  margin-top:12px;
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-dark-mute);
+  display:flex;
+  justify-content:space-between;
+}
+
+@media (max-width:900px){
+  .hero{min-height:0;align-items:flex-start}
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-photo{max-width:380px;justify-self:start;width:100%}
+  .hero-photo-frame{aspect-ratio:1/1}
+}
+@media (max-width:560px){
+  .t-mega{font-size:clamp(3.6rem,19vw,5.5rem)}
+  .hero-photo{max-width:100%}
+  .hero-photo-frame{aspect-ratio:4/3}
+  .hero-actions .btn{flex:1 1 100%}
+  .hero-bento{grid-template-columns:1fr 1fr}
+  .hero-stat--wide{grid-column:1/-1}
+  .hero-stat strong{font-size:1.3rem}
+  .hero-stat--wide strong{font-size:1.05rem}
+}
+
+/* ============================================================
+   7. SECTION SHELL
+   ============================================================ */
+.section{
+  padding-block:clamp(64px,9vw,132px);
+  scroll-margin-top:calc(var(--header-h) + 8px);
+}
+.section-flush{padding-top:0}
+.section-light{background:var(--paper);color:var(--on-light)}
+.section-dark{background:var(--ink);color:var(--on-dark)}
+
+.section-head{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(20px,3vw,48px);
+  margin-bottom:clamp(40px,6vw,72px);
+}
+@media (min-width:840px){
+  .section-head{
+    grid-template-columns:minmax(0,1.4fr) minmax(0,.9fr);
+    align-items:end;
+  }
+}
+
+.section-label-row{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:22px;
+  flex-wrap:wrap;
+}
+.section-title{
+  color:inherit;
+  margin-bottom:0;
+}
+.section-num{
+  font-family:var(--font-sans);
+  font-size:clamp(1.25rem,2vw,1.6rem);
+  font-weight:300;
+  letter-spacing:-.03em;
+  color:var(--taupe);
+  line-height:1;
+  margin-left:auto;
+  display:none;
+}
+@media (min-width:640px){.section-num{display:block}}
+
+.section-note{
+  max-width:52ch;
+  color:var(--on-light-soft);
+  font-size:clamp(.95rem,1.25vw,1.05rem);
+  line-height:1.6;
+}
+.section-dark .section-note{color:var(--on-dark-soft)}
+
+/* ============================================================
+   8. FEATURED — BENTO GRID
+   ============================================================ */
+.featured-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(14px,1.6vw,20px);
+}
+@media (min-width:840px){
+  .featured-grid{
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:minmax(220px,auto);
+  }
+  /* Bento pattern for 4 cards:
+     Card 1 = 2x2 hero, Cards 2+3 = 1x1 stacked, Card 4 = 3x1 wide */
+  .featured-card:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .featured-card:nth-child(4){grid-column:span 3}
+}
+@media (min-width:840px) and (max-width:1100px){
+  .featured-card:nth-child(1){grid-column:span 3;grid-row:span 1}
+  .featured-card:nth-child(4){grid-column:span 3}
+}
+
+.featured-card{
+  display:flex;
+  flex-direction:column;
+  background:var(--surface);
+  border:1px solid var(--line-light);
+  border-radius:16px;
+  overflow:hidden;
+  position:relative;
+  transition:border-color .25s var(--ease),transform .25s var(--ease);
+}
+@media (hover:hover){
+  .featured-card:hover{border-color:var(--line-light-strong);transform:translateY(-2px)}
+}
+.featured-media{
+  display:block;
+  text-decoration:none;
+  border-bottom:1px solid var(--line-light);
+  overflow:hidden;
+}
+.featured-card:nth-child(1) .featured-media .plate,
+.featured-card:nth-child(1) .featured-media img{aspect-ratio:16/11}
+.featured-card:nth-child(4) .featured-media .plate,
+.featured-card:nth-child(4) .featured-media img{aspect-ratio:21/9}
+.featured-media img,
+.card-media img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:var(--paper-2)}
+.featured-body{
+  padding:clamp(20px,2.2vw,28px);
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  flex:1;
+}
+.featured-title{
+  color:#0E1112;
+  font-size:clamp(1.35rem,2.6vw,2rem);
+  font-weight:700;
+  letter-spacing:-.035em;
+  line-height:1.1;
+}
+.featured-card:nth-child(1) .featured-title{font-size:clamp(1.6rem,3vw,2.4rem)}
+.featured-desc{
+  font-size:.95rem;
+  color:var(--on-light-soft);
+  line-height:1.55;
+  max-width:56ch;
+}
+
+/* ============================================================
+   9. WORK LIBRARY — BENTO
+   ============================================================ */
+.filter-bar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:18px;
+}
+.filter-btn{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  min-height:42px;
+  padding:12px 17px;
+  border:1px solid var(--line-dark-strong);
+  background:transparent;
+  color:var(--on-dark-soft);
+  border-radius:999px;
+  cursor:pointer;
+  transition:all .2s var(--ease);
+  font-weight:500;
+}
+.filter-btn:hover{
+  border-color:var(--on-dark);
+  color:var(--on-dark);
+}
+.filter-btn[aria-pressed="true"]{
+  background:var(--taupe);
+  border-color:var(--taupe);
+  color:var(--ink);
+}
+@media (max-width:640px){
+  .filter-bar{
+    flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+    margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);
+    -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;
+  }
+  .filter-bar::-webkit-scrollbar{display:none}
+  .filter-btn{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start}
+}
+.load-more{display:flex;margin:36px auto 0}
+.load-more[hidden]{display:none}
+.result-count{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-dark-soft);
+  margin-bottom:clamp(24px,3vw,36px);
+}
+
+.work-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(14px,1.6vw,20px);
+}
+@media (min-width:680px){
+  .work-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:1040px){
+  .work-grid{grid-template-columns:repeat(3,1fr)}
+  /* Bento emphasis on the first card of each filtered view */
+  .work-grid .card:nth-child(1){grid-column:span 2}
+  .work-grid .card:nth-child(1) .card-media .plate,
+  .work-grid .card:nth-child(1) .card-media img{aspect-ratio:16/9}
+}
+
+.card{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  background:var(--surface-2);
+  border:1px solid var(--line-light);
+  border-radius:16px;
+  overflow:hidden;
+  transition:border-color .25s var(--ease),transform .25s var(--ease);
+}
+@media (hover:hover){
+  .card:hover{border-color:var(--line-light-strong);transform:translateY(-2px)}
+}
+.card-media{
+  display:block;
+  text-decoration:none;
+  border-bottom:1px solid var(--line-light);
+  overflow:hidden;
+}
+.card-body{
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  flex:1;
+}
+.card-title{
+  color:#0E1112;
+  font-size:1.15rem;
+  font-weight:700;
+  letter-spacing:-.025em;
+  line-height:1.2;
+}
+.card-desc{
+  font-size:.9rem;
+  color:var(--on-light-soft);
+  line-height:1.55;
+}
+.card-caps{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:2px;
+}
+.card-caps li{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--on-light-soft);
+  border:1px solid var(--line-light);
+  border-radius:999px;
+  padding:5px 9px;
+  line-height:1.2;
+}
+.card-actions{
+  margin-top:auto;
+  padding-top:16px;
+  border-top:1px solid var(--line-light);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 16px;
+}
+.link-arrow{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-light);
+  text-decoration:none;
+  background:none;
+  border:0;
+  border-bottom:1px solid var(--line-light-strong);
+  padding:10px 0 6px;
+  cursor:pointer;
+  transition:color .2s var(--ease),border-color .2s var(--ease);
+  font-weight:500;
+}
+.link-arrow:hover{
+  color:var(--taupe-deep);
+  border-bottom-color:var(--taupe);
+}
+.badge-this-site{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink);
+  background:var(--taupe);
+  border-radius:999px;
+  padding:4px 9px;
+  margin-left:8px;
+  vertical-align:middle;
+}
+.empty-state{
+  grid-column:1/-1;
+  padding:56px 0;
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-dark-mute);
+}
+
+/* ============================================================
+   10. PLATE (visual placeholder)
+   ============================================================ */
+.plate{
+  position:relative;
+  aspect-ratio:16/10;
+  background:var(--surface-2);
+  overflow:hidden;
+  isolation:isolate;
+}
+.plate[data-pillar="digital-systems"]{--pillar:#2C3538}
+.plate[data-pillar="engineering"]{--pillar:#4A3F35}
+.plate[data-pillar="business"]{--pillar:#3A4247}
+.plate[data-pillar="brand-product"]{--pillar:#5A4A3C}
+.plate[data-pillar="personal"]{--pillar:#5A5F62}
+.plate::after{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;
+  width:4px;
+  background:var(--taupe);
+  z-index:3;
+}
+.plate-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(to right,rgba(14,17,18,.06) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(14,17,18,.06) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.plate-index{
+  position:absolute;
+  top:18px;right:20px;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.16em;
+  color:var(--on-light-mute);
+  z-index:2;
+}
+.plate-mark{
+  position:absolute;
+  left:22px;bottom:14px;
+  font-size:clamp(3rem,10vw,5rem);
+  font-weight:800;
+  letter-spacing:-.06em;
+  line-height:1;
+  color:var(--pillar);
+  z-index:2;
+  transition:transform .3s var(--ease);
+}
+.plate-tag{
+  position:absolute;
+  top:18px;left:22px;
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--on-light-soft);
+  z-index:2;
+}
+.featured-card:hover .plate-mark,
+.card:hover .plate-mark{transform:translateX(4px)}
+
+/* ============================================================
+   11. CAPABILITIES (bento)
+   ============================================================ */
+.cap-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(12px,1.4vw,16px);
+}
+@media (min-width:680px){
+  .cap-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:1040px){
+  .cap-grid{grid-template-columns:repeat(3,1fr)}
+}
+.cap-item{
+  background:var(--ink-2);
+  border:1px solid var(--line-dark);
+  border-radius:16px;
+  padding:clamp(22px,2.6vw,32px);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  transition:border-color .25s var(--ease);
+}
+.cap-item:hover{border-color:var(--line-dark-strong)}
+.cap-item .cap-num{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.16em;
+  color:var(--taupe);
+  font-weight:500;
+}
+.cap-item h3{
+  font-size:clamp(1.2rem,1.9vw,1.55rem);
+  font-weight:700;
+  letter-spacing:-.025em;
+  line-height:1.15;
+  color:var(--on-dark);
+}
+.cap-item ul{
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  margin-top:auto;
+}
+.cap-item li{
+  position:relative;
+  padding-left:16px;
+  font-size:.9rem;
+  color:var(--on-dark-soft);
+  line-height:1.5;
+}
+.cap-item li::before{
+  content:"";
+  position:absolute;
+  left:0;top:.68em;
+  width:8px;height:1px;
+  background:var(--taupe);
+}
+.cap-item--accent{
+  background:var(--taupe);
+  border-color:var(--taupe);
+}
+.cap-item--accent:hover{border-color:var(--taupe)}
+.cap-item--accent .cap-num,
+.cap-item--accent h3{color:var(--ink)}
+.cap-item--accent .cap-num{opacity:.7}
+.cap-item--accent li{color:var(--ink)}
+.cap-item--accent li::before{background:var(--ink)}
+
+/* ============================================================
+   12. ABOUT
+   ============================================================ */
+.about-layout{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(32px,4vw,56px);
+  align-items:start;
+}
+@media (min-width:920px){
+  .about-layout{grid-template-columns:minmax(0,1.5fr) minmax(0,.9fr)}
+}
+.about-copy p{
+  color:var(--on-light-soft);
+  font-size:clamp(1rem,1.35vw,1.1rem);
+  margin-bottom:20px;
+  max-width:60ch;
+  line-height:1.65;
+}
+.about-copy p:last-child{margin-bottom:0}
+.about-copy strong{color:var(--on-light);font-weight:600}
+
+.about-aside{
+  background:var(--ink);
+  color:var(--on-dark);
+  border-radius:16px;
+  padding:clamp(24px,2.8vw,32px);
+  position:relative;
+  overflow:hidden;
+}
+.about-aside::after{
+  content:"";
+  position:absolute;top:0;right:0;
+  width:56px;height:56px;
+  border-top:2px solid var(--taupe);
+  border-right:2px solid var(--taupe);
+}
+.about-aside .meta-line{color:var(--on-dark-mute);margin-bottom:18px}
+.about-aside .aside-title{
+  font-size:1.35rem;
+  font-weight:700;
+  letter-spacing:-.03em;
+  line-height:1.2;
+  margin-bottom:12px;
+  color:var(--on-dark);
+}
+.about-aside p{
+  font-size:.9rem;
+  color:var(--on-dark-soft);
+  margin-bottom:24px;
+  line-height:1.55;
+}
+
+/* ============================================================
+   13. CONTACT + FOOTER
+   ============================================================ */
+.contact{
+  background:var(--ink);
+  color:var(--on-dark);
+  padding-block:clamp(72px,9vw,132px);
+  scroll-margin-top:calc(var(--header-h) + 8px);
+  position:relative;
+  overflow:hidden;
+}
+.contact::before{
+  content:"";
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(to right,rgba(255,255,255,.04) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:80px 80px;
+  -webkit-mask-image:radial-gradient(circle at 80% 40%,#000 0%,transparent 70%);
+  mask-image:radial-gradient(circle at 80% 40%,#000 0%,transparent 70%);
+  pointer-events:none;
+}
+.contact-inner{position:relative;z-index:1}
+.contact .section-title{color:var(--on-dark);margin-bottom:22px}
+.contact-lede{
+  max-width:56ch;
+  color:var(--on-dark-soft);
+  font-size:clamp(1rem,1.35vw,1.1rem);
+  margin-bottom:clamp(32px,4vw,44px);
+}
+.contact-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+@media (max-width:560px){.contact-actions .btn{flex:1 1 100%}}
+.contact-note{
+  margin-top:32px;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-dark-soft);
+}
+
+.site-footer{
+  background:var(--ink);
+  color:var(--on-dark-mute);
+  border-top:1px solid var(--line-dark);
+  padding-block:28px max(28px,env(safe-area-inset-bottom));
+}
+.footer-inner{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px 28px;
+  align-items:center;
+  justify-content:space-between;
+}
+.footer-brand{
+  font-size:13px;
+  color:var(--on-dark-soft);
+  font-weight:500;
+  letter-spacing:-.005em;
+}
+.footer-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 22px;
+}
+.footer-nav a{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-dark-soft);
+  text-decoration:none;
+  padding:6px 0;
+  transition:color .18s var(--ease);
+}
+.footer-nav a:hover{color:var(--taupe)}
+.footer-meta{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+/* ============================================================
+   14. CASE STUDY DIALOG
+   ============================================================ */
+.case-dialog{
+  width:min(920px,94vw);
+  max-width:920px;
+  max-height:92vh;
+  max-height:92dvh;
+  margin:auto;
+  padding:0;
+  border:0;
+  border-radius:16px;
+  background:var(--paper);
+  color:var(--on-light);
+  overflow:hidden;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.75);
+}
+.case-dialog::backdrop{background:rgba(10,12,13,.7)}
+.case-scroll{max-height:92vh;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:560px){
+  .case-dialog{width:100vw;max-width:100vw;max-height:100dvh;height:100dvh;border-radius:0}
+  .case-scroll{max-height:100dvh;height:100%}
+}
+.case-bar{
+  position:sticky;
+  top:0;z-index:5;
+  padding-top:max(14px,env(safe-area-inset-top));
+  display:flex;
+  justify-content:flex-end;
+  padding:14px clamp(20px,3vw,36px) 6px;
+  background:linear-gradient(to bottom,var(--paper) 62%,rgba(244,243,239,0));
+}
+.case-close{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:44px;
+  padding:10px 16px;
+  background:transparent;
+  border:1px solid var(--line-light-strong);
+  border-radius:999px;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-light-soft);
+  cursor:pointer;
+  transition:all .2s var(--ease);
+}
+.case-close:hover{
+  border-color:var(--ink);
+  color:var(--ink);
+}
+
+.case-content{padding:8px clamp(20px,3.4vw,44px) max(36px,env(safe-area-inset-bottom))}
+.case-cat{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--taupe-deep);
+  margin-bottom:16px;
+}
+.case-title{
+  font-size:clamp(1.75rem,4vw,3rem);
+  line-height:1.05;
+  letter-spacing:-.04em;
+  font-weight:800;
+  margin-bottom:28px;
+}
+.case-meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1px;
+  background:var(--line-light);
+  border:1px solid var(--line-light);
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:clamp(28px,4vw,44px);
+}
+@media (min-width:620px){.case-meta{grid-template-columns:repeat(3,1fr)}}
+.case-meta > div{background:var(--surface);padding:18px 20px}
+.case-meta dt{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+  margin-bottom:8px;
+}
+.case-meta dd{font-size:.95rem;color:var(--on-light);line-height:1.45;font-weight:500}
+
+.case-section{
+  padding-top:26px;
+  margin-top:26px;
+  border-top:1px solid var(--line-light);
+}
+.case-section:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.case-section h3{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--taupe-deep);
+  margin-bottom:14px;
+}
+.case-section p{color:var(--on-light-soft);font-size:1rem;max-width:66ch;line-height:1.65}
+.case-section ul{display:flex;flex-direction:column;gap:10px}
+.case-section li{overflow-wrap:anywhere;
+  position:relative;
+  padding-left:18px;
+  color:var(--on-light-soft);
+  font-size:.95rem;
+  line-height:1.55;
+}
+.case-section li::before{
+  content:"";
+  position:absolute;left:0;top:.72em;
+  width:8px;height:1px;
+  background:var(--taupe);
+}
+.case-actions .btn{flex:1 1 180px}
+.case-actions{
+  margin-top:clamp(28px,4vw,44px);
+  padding-top:28px;
+  border-top:1px solid var(--line-light);
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+/* ============================================================
+   15. MOTION PREFERENCES
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}
+
+/* ============================================================
+   16. POLISH — coral / dark direction
+   ============================================================ */
+.t-display{font-size:clamp(2.4rem,5.5vw,4.5rem);line-height:.96}
+.t-title{font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.035em;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:18px;font-family:var(--font-mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--on-dark-soft)}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--taupe)}
+
+.brand-mark{width:40px;height:40px;background:var(--paper);font-size:13px}
+.brand-name{font-size:18px;font-weight:600}
+.nav-link{font-size:11px;letter-spacing:.18em;color:var(--on-dark)}
+.nav-link:hover{color:var(--taupe)}
+.nav-link[aria-current="true"]{color:var(--on-dark)}
+.btn{font-family:var(--font-sans);font-size:12.5px;font-weight:600;letter-spacing:.08em;min-height:52px;padding:14px 30px}
+.btn-taupe:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+
+/* Hero */
+.hero{min-height:0;align-items:flex-start;padding-block:clamp(40px,5vw,72px) clamp(48px,6vw,80px)}
+.hero::before{display:none}
+.hero-inner{align-items:start;gap:clamp(32px,5vw,72px)}
+.hero-title{font-size:clamp(2.9rem,8.6vw,7.8rem);line-height:.9;letter-spacing:-.045em;font-weight:800;text-transform:uppercase;margin-bottom:clamp(22px,3vw,34px)}
+.hero-title em{display:block;font-style:normal;color:var(--taupe)}
+.hero-lede{max-width:34ch;color:var(--on-dark);font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.45}
+.hero-photo{border:1px solid var(--line-dark-strong);border-radius:12px;overflow:hidden;background:var(--ink)}
+.hero-photo-frame{aspect-ratio:10/11;border:0;border-radius:0}
+.hero-photo-frame::before,.hero-photo-frame::after{display:none}
+.hero-photo figcaption{margin:0;padding:14px 20px;border-top:1px solid var(--line-dark-strong);font-size:10.5px;letter-spacing:.2em;color:var(--on-dark);justify-content:flex-start;gap:14px}
+.hero-photo figcaption span+span::before{content:"";display:inline-block;width:3px;height:3px;border-radius:50%;background:currentColor;margin-right:14px;vertical-align:middle}
+.hero-aside{display:none;font-family:var(--font-mono);font-size:12px;letter-spacing:.3em;line-height:1.7;text-transform:uppercase;color:var(--on-dark-soft)}
+.hero-aside::before{content:"";display:block;width:1px;height:38px;background:var(--line-dark-strong);margin-bottom:22px}
+@media (min-width:1180px){
+  .hero-inner{grid-template-columns:minmax(0,1fr) minmax(300px,31vw) 120px}
+  .hero-aside{display:block}
+}
+@media (max-width:900px){
+  .hero-photo{max-width:420px}
+  .hero-photo-frame{aspect-ratio:10/11}
+}
+@media (max-width:560px){.hero-photo{max-width:100%}.hero-photo-frame{aspect-ratio:1/1}}
+
+/* Featured */
+#featured,#work{border-top:1px solid var(--line-dark)}
+#featured{padding-block:clamp(48px,6vw,80px)}
+.section-head--row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px 24px;margin-bottom:clamp(24px,3vw,36px)}
+.section-head--row .eyebrow{margin-bottom:10px}
+.link-accent{color:var(--taupe);border-bottom-color:transparent}
+.link-accent:hover{color:var(--on-dark);border-bottom-color:var(--on-dark)}
+.featured-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));grid-auto-rows:auto}
+.featured-grid .featured-card:nth-child(n){grid-column:auto;grid-row:auto}
+.featured-grid .featured-card:nth-child(n) .featured-media .plate,
+.featured-grid .featured-card:nth-child(n) .featured-media img{aspect-ratio:16/10}
+.featured-card,.card{background:transparent;border-color:var(--line-dark);border-radius:12px}
+@media (hover:hover){.featured-card:hover,.card:hover{border-color:var(--taupe);transform:none}}
+.featured-media,.card-media{border-bottom-color:var(--line-dark)}
+.featured-body{padding:22px;gap:10px}
+.featured-body .pill{padding:0;border:0;color:var(--taupe);font-size:10.5px;letter-spacing:.18em}
+.featured-grid .featured-card:nth-child(n) .featured-title{color:var(--on-dark);font-size:1.35rem;letter-spacing:-.025em}
+.featured-desc{color:var(--on-dark-soft);font-size:.92rem}
+.featured-card .card-caps{display:none}
+.featured-card .card-actions,.card-actions{border-top:0;padding-top:8px}
+.card-title{color:var(--on-dark)}
+.card-desc{color:var(--on-dark-soft)}
+.card-caps li{color:var(--on-dark-soft);border-color:var(--line-dark)}
+.card-actions{border-top:1px solid var(--line-dark);padding-top:16px}
+.featured-card .link-arrow,.card .link-arrow{color:var(--taupe);border-bottom-color:transparent}
+.featured-card .link-arrow:hover,.card .link-arrow:hover{color:var(--on-dark);border-bottom-color:var(--on-dark)}
+.plate-mark{color:var(--ink-3)}
+
+/* Transparent menu over the landing page, glass once scrolled */
+.site-header{margin-bottom:calc(var(--header-h) * -1);background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom-color:transparent;transition:background-color .3s var(--ease),border-color .3s var(--ease),backdrop-filter .3s var(--ease)}
+.site-header.is-scrolled{background:rgba(14,17,18,.78);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);border-bottom-color:var(--line-dark)}
+.hero{padding-top:calc(var(--header-h) + clamp(40px,5vw,72px))}
+.brand-mark{display:block;width:44px;height:44px;border-radius:50%;object-fit:cover;background:transparent;padding:0}
+
+/* Slimmer menu bar + link hover */
+:root{--header-h:52px}
+.header-inner{gap:16px}
+.brand{gap:10px}
+.brand-mark{width:32px;height:32px}
+.brand-name{font-size:16px}
+.nav-link{padding:9px 0;font-size:10.5px;border-bottom-width:2px;transition:color .18s var(--ease),border-color .18s var(--ease)}
+.nav-link:hover{color:var(--taupe);border-bottom-color:rgba(255,122,99,.55)}
+.nav-link[aria-current="true"]{color:var(--on-dark);border-bottom-color:var(--taupe)}
+
+/* Circular profile photo */
+.hero-photo-frame{background:radial-gradient(circle at 50% 40%,var(--ink-3) 0%,var(--ink-2) 70%)}
+.hero-photo-frame img{object-fit:contain;padding:clamp(18px,3vw,34px);filter:none}
+@media (hover:hover){.hero-photo:hover img{transform:none}}
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Guled Hassen — home">
+      <img class="brand-mark" src="logo.png" alt="" width="40" height="40" decoding="async">
+      <span class="brand-name">Guled Hassen</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-link" href="#work" data-nav="work">Work</a>
+      <a class="nav-link" href="#capabilities" data-nav="capabilities">Capabilities</a>
+      <a class="nav-link" href="#about" data-nav="about">About</a>
+      <a class="nav-link" href="#contact" data-nav="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==========================================================
+       HERO
+       ========================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Product Designer</p>
+        <h1 class="hero-title">Product<br><em>Designer</em></h1>
+        <p class="hero-lede">I design useful digital products, intuitive interfaces, and practical systems for real-world problems.</p>
+        <div class="hero-actions">
+          <a class="btn btn-taupe" href="#work">Explore projects <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost-dark" href="#about">About me</a>
+        </div>
+      </div>
+
+      <figure class="hero-photo">
+        <div class="hero-photo-frame">
+          <img src="profile.png" alt="Portrait of Guled Hassen" width="500" height="500" loading="eager" decoding="async" onerror="this.parentElement.classList.add('is-fallback')">
+          <span class="hero-fallback" aria-hidden="true">GH</span>
+        </div>
+        <figcaption><span>Product Designer</span><span>Digital Experiences</span></figcaption>
+      </figure>
+
+      <p class="hero-aside" aria-hidden="true">Design<br>thinking<br>builds<br>better<br>products</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FEATURED WORK — BENTO
+       ========================================================== -->
+  <section class="section section-dark" id="featured" aria-labelledby="featured-title">
+    <div class="container">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="eyebrow">Featured work</p>
+          <h2 class="section-title t-title" id="featured-title">Selected Projects</h2>
+        </div>
+        <a class="link-arrow link-accent" href="#work">View all projects ↗</a>
+      </header>
+
+      <div class="featured-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       WORK LIBRARY — BENTO
+       ========================================================== -->
+  <section class="section section-dark" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <div class="section-label-row">
+            <span class="pill pill-taupe">02 — Work Library</span>
+            <span class="section-num">/ 02</span>
+          </div>
+          <h2 class="section-title t-display" id="work-title">All<br>projects</h2>
+        </div>
+        <p class="section-note">
+          The complete body of work, organised by discipline. Filter to move
+          between digital systems, engineering, business, brand and data.
+        </p>
+      </header>
+
+      <div class="filter-bar" id="filterBar" role="group" aria-label="Filter projects by discipline"></div>
+      <p class="result-count" id="resultCount" role="status" aria-live="polite"></p>
+
+      <div class="work-grid" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CAPABILITIES — BENTO
+       ========================================================== -->
+  <section class="section section-dark section-flush" id="capabilities" aria-labelledby="cap-title">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <div class="section-label-row">
+            <span class="pill pill-taupe">03 — Capabilities</span>
+            <span class="section-num">/ 03</span>
+          </div>
+          <h2 class="section-title t-display" id="cap-title">What the<br>work covers</h2>
+        </div>
+        <p class="section-note">
+          The projects sit at the intersection of engineering thinking, digital
+          product design and business practice.
+        </p>
+      </header>
+
+      <div class="cap-grid">
+        <div class="cap-item">
+          <span class="cap-num">01</span>
+          <h3>Digital Product</h3>
+          <ul>
+            <li>System architecture</li>
+            <li>Dashboards</li>
+            <li>Data interfaces</li>
+            <li>Interactive tools</li>
+          </ul>
+        </div>
+        <div class="cap-item">
+          <span class="cap-num">02</span>
+          <h3>Web</h3>
+          <ul>
+            <li>Responsive websites</li>
+            <li>Business platforms</li>
+            <li>Landing pages</li>
+            <li>Web applications</li>
+          </ul>
+        </div>
+        <div class="cap-item">
+          <span class="cap-num">03</span>
+          <h3>Engineering</h3>
+          <ul>
+            <li>Construction</li>
+            <li>Manufacturing</li>
+            <li>Technical documentation</li>
+            <li>Industrial applications</li>
+          </ul>
+        </div>
+        <div class="cap-item">
+          <span class="cap-num">04</span>
+          <h3>Design</h3>
+          <ul>
+            <li>UI/UX</li>
+            <li>Brand systems</li>
+            <li>Product presentation</li>
+            <li>Visual communication</li>
+          </ul>
+        </div>
+        <div class="cap-item">
+          <span class="cap-num">05</span>
+          <h3>Business</h3>
+          <ul>
+            <li>Business digitalization</li>
+            <li>Catalog systems</li>
+            <li>Product presentation</li>
+            <li>Export / business platforms</li>
+          </ul>
+        </div>
+        <div class="cap-item cap-item--accent">
+          <span class="cap-num">06</span>
+          <h3>Approach</h3>
+          <ul>
+            <li>Structure before surface</li>
+            <li>Systems over pages</li>
+            <li>Clarity over decoration</li>
+            <li>Built to be extended</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       ABOUT
+       ========================================================== -->
+  <section class="section section-light" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <div class="section-label-row">
+            <span class="pill pill-light">04 — About</span>
+            <span class="section-num">/ 04</span>
+          </div>
+          <h2 class="section-title t-display" id="about-title">Harar-born.<br>Engineer-trained.<br>Built for the web.</h2>
+        </div>
+        <p class="section-note">
+          Where I come from, the work I have done, and what I care about building.
+        </p>
+      </header>
+
+      <div class="about-layout">
+        <div class="about-copy">
+          <p>
+            I was born in Harar, Ethiopia, in 1994 and grew up in the city.
+            A single parent raised me and sent me to private school, and I am
+            grateful that both of my parents are alive today.
+          </p>
+          <p>
+            I graduated as an <strong>engineer in 2016</strong>. Since then I
+            have worked as a contractor, run a bakery business and worked in a
+            municipality office. Each one showed me how real organisations
+            operate, and where a better system would make the work easier.
+          </p>
+          <p>
+            I am married and a father of three, which keeps my work practical
+            and my priorities clear. What I am most passionate about is
+            <strong>technology and digital experience</strong>: building
+            websites, business platforms and data tools that make information
+            clear and easy to use.
+          </p>
+        </div>
+
+        <aside class="about-aside" aria-label="Professional portfolio link">
+          <p class="meta-line">Personal Layer</p>
+          <h3 class="aside-title">Guled Hassen Professional Portfolio</h3>
+          <p>
+            The personal identity layer — background, professional profile and
+            experience, kept separate from the project work above.
+          </p>
+          <a class="btn btn-taupe"
+             href="https://guledz.github.io/Guled-Hassen-Professional-Portfolio/"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Portfolio ↗
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CONTACT
+       ========================================================== -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-inner">
+      <div class="section-label-row">
+        <span class="pill pill-taupe">05 — Contact</span>
+        <span class="section-num">/ 05</span>
+      </div>
+      <h2 class="section-title t-display" id="contact-title">Let's build<br>something<br>practical.</h2>
+      <p class="contact-lede">
+        Open to work involving digital systems, business platforms, data tools,
+        engineering applications and product experiences.
+      </p>
+
+      <div class="contact-actions">
+        <a class="btn btn-taupe" href="mailto:Guledh918@gmail.com">
+          Guledh918@gmail.com
+        </a>
+        <a class="btn btn-ghost-dark" id="linkedinBtn" hidden
+           href="#"
+           target="_blank"
+           rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+        <a class="btn btn-ghost-dark"
+           href="https://github.com/guledz"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+        <a class="btn btn-ghost-dark"
+           href="https://guledhassen.vercel.app"
+           target="_blank"
+           rel="noopener noreferrer">
+          Website ↗
+        </a>
+        <a class="btn btn-ghost-dark"
+           href="https://guledz.github.io/Guled-Hassen-Professional-Portfolio/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Professional Portfolio ↗
+        </a>
+        <a class="btn btn-ghost-dark" href="tel:0915415011">
+          0915 415 011
+        </a>
+      </div>
+
+      <p class="contact-note">All project sites open in a new tab.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-brand">Guled Hassen — Engineer · Digital Product Builder · Web Developer</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-meta">Master Portfolio Hub</p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     CASE STUDY DIALOG
+     ============================================================ -->
+<dialog class="case-dialog" id="caseDialog" aria-labelledby="caseTitle">
+  <div class="case-scroll">
+    <div class="case-bar">
+      <button type="button" class="case-close" id="caseClose">
+        Close <span aria-hidden="true">✕</span>
+      </button>
+    </div>
+    <div class="case-content" id="caseContent"></div>
+  </div>
+</dialog>
+
+<script>
+/* ============================================================
+   PROJECT DATA MODEL — unchanged
+   ============================================================ */
+const PROJECTS = [
+  {
+    id: 'universal-project-master-system',
+    year: '2025',
+    title: 'Universal Project Master System',
+    category: 'Digital Systems',
+    pillarKey: 'digital-systems',
+    filters: ['digital-systems'],
+    monogram: 'UP',
+    shortDescription:
+      'A master system for structuring project information and workflows into one organised digital environment.',
+    role: 'Design & Development',
+    capabilities: ['System architecture', 'Structured data', 'Workflow organisation', 'Web application'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'universal-project-master-system.png',
+    liveUrl: 'https://guledz.github.io/Universal-Project-Master-System/',
+    featured: true,
+    isThisSite: false,
+    caseStudy: {
+      year: '2025',
+      role: 'Design & Development',
+      challenge:
+        'Project work spreads across folders, documents, links and notes. Without a single structure, information becomes hard to find, hard to compare and easy to lose.',
+      approach:
+        'Treat the project as a system rather than a page: define a consistent record structure first, then build the interface around navigation, consistency and quick retrieval.',
+      solution:
+        'A master project system that holds project records in one structured environment, with a consistent layout applied across every entry.',
+      features: [
+        'Central project register',
+        'Consistent project record structure',
+        'Navigation across multiple projects',
+        'Responsive interface for desktop and mobile'
+      ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+      outcome:
+        'Gives project work a single navigable home instead of scattered documents and links.'
+    }
+  },
+  {
+    "id": "smart-tools",
+    "year": "",
+    "title": "Smart Tools",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "ST",
+    "shortDescription": "A collection of small web tools.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web tools",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "smart-tools.png",
+    "liveUrl": "https://guledz.github.io/Smart-tools/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    id: 'orca-2019',
+    year: '2019',
+    title: 'ORCA 2019 Construction Industry Market Survey Data',
+    category: 'Construction Data System',
+    pillarKey: 'digital-systems',
+    filters: ['digital-systems', 'data', 'engineering'],
+    monogram: 'OR',
+    shortDescription:
+      'A searchable construction-market data platform transforming a historical dataset into an accessible digital resource.',
+    role: 'Data structuring, Interface design, Development',
+    capabilities: ['Dataset structuring', 'Search & filtering', 'Data interface', 'Technical documentation'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'orca-2019.png',
+    liveUrl: 'https://guledz.github.io/ORCA-2019construction-industry-market-survey-data/',
+    featured: true,
+    isThisSite: false,
+    caseStudy: {
+      year: '2019',
+      role: 'Data structuring, Interface design, Development',
+      challenge:
+        'A construction industry market survey produces a large volume of structured data. In its raw form it is difficult to search, compare or reuse.',
+      approach:
+        'Structure the dataset first, then design a digital interface that lets a reader move through it without needing spreadsheet skills.',
+      solution:
+        'A searchable construction-market data platform that turns a historical survey dataset into an accessible digital resource.',
+      features: [
+        'Structured survey dataset',
+        'Searchable and browsable records',
+        'Data-oriented interface',
+        'Readable presentation of survey fields'
+      ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+      outcome:
+        'Makes a historical industry dataset available as a usable digital reference.'
+    }
+  },
+  {
+    "id": "product-management-workflow",
+    "year": "",
+    "title": "Product Management Workflow",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "PM",
+    "shortDescription": "A workflow system for organising product management work.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Workflow organisation",
+      "Structured data",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "product-management-workflow.png",
+    "liveUrl": "https://guledz.github.io/Product-management-workflow-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    id: 'portfolio-dashboard',
+    year: '2025',
+    title: 'Portfolio Dashboard',
+    category: 'Digital Systems',
+    pillarKey: 'digital-systems',
+    filters: ['digital-systems'],
+    monogram: 'PD',
+    shortDescription:
+      'The master portfolio hub — one platform that organises a multi-industry body of work into a single, filterable, navigable system.',
+    role: 'Design, Information Architecture, Front-end Development',
+    capabilities: ['Information architecture', 'Filterable data interface', 'Responsive front-end', 'Accessibility'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'portfolio-dashboard.png',
+    liveUrl: 'https://guledz.github.io/Guledhassen/',
+    featured: false,
+    isThisSite: true,
+    caseStudy: null
+  },
+  {
+    "id": "amud-motel-command-center",
+    "year": "",
+    "title": "Amud Motel Command Center",
+    "category": "Business Digitalization",
+    "pillarKey": "business",
+    "filters": [
+      "business",
+      "digital-systems"
+    ],
+    "monogram": "AM",
+    "shortDescription": "A command-center style interface for managing a motel business.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Business digitalization",
+      "Operations dashboard",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "amud-motel-command-center.png",
+    "liveUrl": "https://guledz.github.io/Amud-Motel-Command-Center-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    id: 'nure-works',
+    year: '2024',
+    title: 'Furniture & Metalwork — NURE·WORKS',
+    category: 'Engineering & Industrial',
+    pillarKey: 'engineering',
+    filters: ['engineering', 'brand-product'],
+    monogram: 'NW',
+    shortDescription:
+      'A product and catalogue experience for a furniture and metalwork business, presenting fabricated products and workshop output.',
+    role: 'Design & Development',
+    capabilities: ['Product catalogue', 'Engineering presentation', 'Large-format product display', 'Responsive front-end'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'nure-works.png',
+    liveUrl: 'https://guledz.github.io/Furniture-metalwork/',
+    featured: false,
+    isThisSite: false,
+    caseStudy: {
+      year: '2024',
+      role: 'Design & Development',
+      challenge:
+        'Furniture and metalwork is a physical trade. Presenting fabricated products online requires the work itself to carry the page, not decorative layout.',
+      approach:
+        'Treat the catalogue as the primary interface: large product presentation, restrained supporting text, and a structure that lets the fabrication speak.',
+      solution:
+        'A product and catalogue experience for a furniture and metalwork business, presenting fabricated furniture and metalwork products.',
+      features: [
+        'Product catalogue structure',
+        'Large-format product presentation',
+        'Engineering and industrial framing',
+        'Responsive layout for mobile and desktop'
+      ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+      outcome:
+        'Presents a physical fabrication business through a structured digital catalogue.'
+    }
+  },
+  {
+    id: 'medical-equipment-supplier',
+    year: '2024',
+    title: 'Medical Equipment Supplier',
+    category: 'Business Digitalization',
+    pillarKey: 'business',
+    filters: ['business'],
+    monogram: 'ME',
+    shortDescription:
+      'A professional digital platform designed to present medical equipment, services, and business information.',
+    role: 'Design & Development',
+    capabilities: ['Business digitalization', 'Product presentation', 'Information architecture', 'Responsive front-end'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'medical-equipment-supplier.png',
+    liveUrl: 'https://guledz.github.io/Medical-equipment-supplier/',
+    featured: true,
+    isThisSite: false,
+    caseStudy: {
+      year: '2024',
+      role: 'Design & Development',
+      challenge:
+        "A supplier's product range and business information are difficult to present clearly when spread across documents and informal channels.",
+      approach:
+        'Organise the business information first — equipment, services, company details — then build a clean presentation layer around it.',
+      solution:
+        'A professional digital platform designed to present medical equipment, services and business information.',
+      features: [
+        'Equipment and product presentation',
+        'Service information structure',
+        'Business profile content',
+        'Responsive layout for mobile and desktop'
+      ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+      outcome:
+        'Gives the business a professional digital front door for its equipment and services.'
+    }
+  },
+  {
+    id: 'makona-coffee-export',
+    year: '2025',
+    title: 'Makona Coffee Export',
+    category: 'Business & Export Platform',
+    pillarKey: 'business',
+    filters: ['business'],
+    monogram: 'MC',
+    shortDescription:
+      'A digital presence for a coffee export business, presenting products and export business information in a professional format.',
+    role: 'Design & Development',
+    capabilities: ['Business digitalization', 'Export platform', 'Product presentation', 'Responsive front-end'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'makona-coffee-export.png',
+    liveUrl: 'https://guledz.github.io/MakonaCoffeeexport/',
+    featured: false,
+    isThisSite: false,
+    caseStudy: null
+  },
+  {
+    id: 'shaggaa-street-wear-fitted',
+    year: '2026',
+    title: 'SHAGGAA Street Wear Fitted',
+    category: 'Brand & Product',
+    pillarKey: 'brand-product',
+    filters: ['brand-product'],
+    monogram: 'SH',
+    shortDescription:
+      'A brand and product experience for the SHAGGAA streetwear collection, connecting identity with product presentation.',
+    role: 'Design & Development',
+    capabilities: ['Brand system', 'Product presentation', 'UI/UX', 'Responsive front-end'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'shaggaa-street-wear-fitted.png',
+    liveUrl: 'https://guledz.github.io/Shaggaa-street-wear-fitted-/',
+    featured: true,
+    isThisSite: false,
+    caseStudy: {
+      year: '2026',
+      role: 'Design & Development',
+      challenge:
+        'A streetwear collection needs a digital presence that carries brand identity and presents product clearly, without losing the character of the brand.',
+      approach:
+        'Build the identity and the product presentation together — typography, layout and product imagery working as one system rather than as separate pieces.',
+      solution:
+        'A brand and product experience for the SHAGGAA streetwear collection, connecting brand identity with product presentation.',
+      features: [
+        'Brand-led visual system',
+        'Product presentation layouts',
+        'Fitted collection focus',
+        'Responsive product browsing'
+      ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+      outcome:
+        'Presents the SHAGGAA collection as a coherent brand and product experience.'
+    }
+  },
+  {
+    id: 'street-wear',
+    year: '2026',
+    title: 'Street Wear',
+    category: 'Brand & Product',
+    pillarKey: 'brand-product',
+    filters: ['brand-product'],
+    monogram: 'SW',
+    shortDescription:
+      'A streetwear product experience focused on presenting apparel through a strong visual identity and a clean product layout.',
+    role: 'Design & Development',
+    capabilities: ['Product presentation', 'Visual identity', 'UI/UX', 'Responsive front-end'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Tools', 'ChatGPT', 'Claude', 'DeepSeek', 'PicsArt'],
+    image: 'street-wear.png',
+    liveUrl: 'https://guledz.github.io/Street-wear/',
+    featured: false,
+    isThisSite: false,
+    caseStudy: null
+  },
+  {
+    "id": "abdulhamid-edits-portfolio",
+    "year": "",
+    "title": "Abdulhamid Hassen — Portfolio",
+    "category": "Brand & Product",
+    "pillarKey": "brand-product",
+    "filters": [
+      "brand-product",
+      "digital-systems"
+    ],
+    "monogram": "AH",
+    "shortDescription": "A conversion-focused portfolio for a freelance video editor and graphics designer, built to prove the work and make it easy to start a conversation.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Conversion-focused layout",
+      "Case-study modals",
+      "Accessibility",
+      "SEO"
+    ],
+    "technologies": [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "image": "abdulhamid-edits-portfolio.png",
+    "liveUrl": "https://abdulhamidedits.com",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": {
+      "year": "",
+      "role": "Design & Development",
+      "challenge": "A video editor's portfolio has about three seconds to answer two questions: does the work look like what I want, and what do I do next. Most editor portfolios fail at both.",
+      "approach": "Lead with the outcome rather than a service list, give visitors two clear paths (view work or get a quote), and open each project in a modal instead of a separate page.",
+      "solution": "A fast, accessible portfolio with a retention-led headline, a filterable work library, native dialog case studies and a tappable phone call-to-action.",
+      "features": [
+        "Outcome-led hero and stats row",
+        "Filterable work library with case-study modals",
+        "Server-validated contact form",
+        "Accessibility and reduced-motion support",
+        "SEO metadata and structured data"
+      ],
+      "technologies": [
+        "Next.js 14",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion"
+      ],
+      "outcome": "A portfolio focused on one job: booking a call or a quote request."
+    }
+  },
+  {
+    "id": "adal-art",
+    "year": "",
+    "title": "Adal Art",
+    "category": "Brand & Product",
+    "pillarKey": "brand-product",
+    "filters": [
+      "brand-product"
+    ],
+    "monogram": "AA",
+    "shortDescription": "A website for Adal Art, presenting the work online.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "adal-art.png",
+    "liveUrl": "https://guledz.github.io/Adal-art/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "adal-digital-embassy",
+    "year": "",
+    "title": "Adal Digital Embassy",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "AE",
+    "shortDescription": "A web platform project built under the Adal name.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "adal-digital-embassy.png",
+    "liveUrl": "https://guledz.github.io/Adal-digital-embassy-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "adal-digital-marketing-dashboard",
+    "year": "",
+    "title": "Adal Digital Marketing Dashboard",
+    "category": "Data & Dashboards",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "data",
+      "digital-systems"
+    ],
+    "monogram": "AD",
+    "shortDescription": "A dashboard interface for tracking and presenting digital marketing activity.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Dashboard interface",
+      "Data presentation",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "adal-digital-marketing-dashboard.png",
+    "liveUrl": "https://guledz.github.io/adal-digital-marketing-dashboard/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "background-youtube-player",
+    "year": "",
+    "title": "Background YouTube Player",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "BY",
+    "shortDescription": "A web utility for playing YouTube content in the background.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web utility",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "background-youtube-player.png",
+    "liveUrl": "https://guledz.github.io/Background-YouTube-player-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "guled-hassen-professional-portfolio",
+    "year": "",
+    "title": "Guled Hassen Professional Portfolio",
+    "category": "Personal Portfolio",
+    "pillarKey": "personal",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "GP",
+    "shortDescription": "A professional portfolio presenting the background and work of Guled Hassen.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "guled-hassen-professional-portfolio.png",
+    "liveUrl": "https://guledz.github.io/Guled-Hassen-Professional-Portfolio/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "guledhassen",
+    "year": "",
+    "title": "Guled Hassen",
+    "category": "Personal Portfolio",
+    "pillarKey": "personal",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "GH",
+    "shortDescription": "The personal portfolio site of Guled Hassen.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "guledhassen.png",
+    "liveUrl": "https://guledz.github.io/Guledhassen/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "guledhassenwebdev",
+    "year": "",
+    "title": "Guled Hassen — Web Developer",
+    "category": "Personal Portfolio",
+    "pillarKey": "personal",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "GW",
+    "shortDescription": "A web-development focused portfolio for Guled Hassen.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "guledhassenwebdev.png",
+    "liveUrl": "https://guledz.github.io/Guledhassenwebdev/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "harar-city-digital-visibility-initiative",
+    "year": "",
+    "title": "Harar City Digital Visibility Initiative",
+    "category": "Civic Digitalization",
+    "pillarKey": "business",
+    "filters": [
+      "business",
+      "digital-systems"
+    ],
+    "monogram": "HC",
+    "shortDescription": "An initiative focused on increasing the digital visibility of Harar city.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Digital visibility",
+      "Information architecture",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "harar-city-digital-visibility-initiative.png",
+    "liveUrl": "https://guledz.github.io/Harar-City-Digital-Visibility-Initiative/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "makanis-oromoo-municipality",
+    "year": "",
+    "title": "Makanis Oromoo Municipality",
+    "category": "Civic Digitalization",
+    "pillarKey": "business",
+    "filters": [
+      "business"
+    ],
+    "monogram": "MO",
+    "shortDescription": "A website presenting the Makanis Oromoo municipality online.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Public-sector web presence",
+      "Information architecture",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "makanis-oromoo-municipality.png",
+    "liveUrl": "https://guledz.github.io/Makanis-oromoo-muncipality-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "muummee-street-wear-fitted-cap",
+    "year": "",
+    "title": "Muummee Street Wear Fitted Cap",
+    "category": "Brand & Product",
+    "pillarKey": "brand-product",
+    "filters": [
+      "brand-product"
+    ],
+    "monogram": "MU",
+    "shortDescription": "A product page for the Muummee street wear fitted cap.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Product presentation",
+      "Brand experience",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "muummee-street-wear-fitted-cap.png",
+    "liveUrl": "https://guledz.github.io/Muummee-street-wear-fitted-cap-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "mycv",
+    "year": "",
+    "title": "My CV",
+    "category": "Personal Portfolio",
+    "pillarKey": "personal",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "CV",
+    "shortDescription": "An online CV presented as a web page.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "mycv.png",
+    "liveUrl": "https://guledz.github.io/Mycv/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "opentowork",
+    "year": "",
+    "title": "Open to Work",
+    "category": "Personal Portfolio",
+    "pillarKey": "personal",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "OW",
+    "shortDescription": "A page that signals availability for work and makes contact easy.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "opentowork.png",
+    "liveUrl": "https://guledz.github.io/Opentowork/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "portfolio",
+    "year": "",
+    "title": "Portfolio",
+    "category": "Personal Portfolio",
+    "pillarKey": "personal",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "PF",
+    "shortDescription": "A portfolio site presenting selected work.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Web design",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "portfolio.png",
+    "liveUrl": "https://guledz.github.io/Portfolio/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "portfolio-readiness-command-center",
+    "year": "",
+    "title": "Portfolio Readiness Command Center",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "PR",
+    "shortDescription": "A command-center interface for managing portfolio readiness.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Command-center interface",
+      "Workflow organisation",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "portfolio-readiness-command-center.png",
+    "liveUrl": "https://guledz.github.io/Portfolio-Readiness-Command-Center/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "progress-document",
+    "year": "",
+    "title": "Progress Document",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "PG",
+    "shortDescription": "A progress document presented as a web page.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Documentation",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "progress-document.png",
+    "liveUrl": "https://guledz.github.io/Progressdocument-/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "special-octo-guide",
+    "year": "",
+    "title": "Special Octo Guide",
+    "category": "Digital Systems",
+    "pillarKey": "digital-systems",
+    "filters": [
+      "digital-systems"
+    ],
+    "monogram": "SG",
+    "shortDescription": "A guide published as a web page.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Documentation",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "special-octo-guide.png",
+    "liveUrl": "https://guledz.github.io/special-octo-guide/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  },
+  {
+    "id": "wab-construction-company",
+    "year": "",
+    "title": "WAB Construction Company",
+    "category": "Business Digitalization",
+    "pillarKey": "business",
+    "filters": [
+      "business",
+      "engineering"
+    ],
+    "monogram": "WC",
+    "shortDescription": "A company website for WAB Construction.",
+    "role": "Design & Development",
+    "capabilities": [
+      "Business digitalization",
+      "Responsive front-end"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "wab-construction-company.png",
+    "liveUrl": "https://guledz.github.io/Wab-Construction-company/",
+    "featured": false,
+    "isThisSite": false,
+    "caseStudy": null
+  }
+];
+
+/* ============================================================
+   FILTERS — unchanged
+   ============================================================ */
+const FILTERS = [
+  { id: 'all',            label: 'All' },
+  { id: 'digital-systems',label: 'Digital Systems' },
+  { id: 'engineering',    label: 'Engineering' },
+  { id: 'business',       label: 'Business' },
+  { id: 'brand-product',  label: 'Brand & Product' },
+  { id: 'data',           label: 'Data' }
+];
+
+/* ============================================================
+   HELPERS
+   ============================================================ */
+const esc = (str) => String(str)
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;');
+
+function plateHTML(project, index, showTag) {
+  const num = String(index + 1).padStart(2, '0');
+  return `
+    <div class="plate" data-pillar="${esc(project.pillarKey)}" aria-hidden="true">
+      <span class="plate-grid"></span>
+      ${showTag ? `<span class="plate-tag">${esc(project.category)}</span>` : ''}
+      <span class="plate-index">${num}</span>
+      <span class="plate-mark">${esc(project.monogram)}</span>
+    </div>`;
+}
+
+function mediaHTML(project, index, showTag) {
+  if (project.image) {
+    return `<img src="${esc(project.image)}"
+                 alt="${esc(project.title)} — project preview"
+                 width="1200" height="750"
+                 loading="lazy" decoding="async"
+                 data-fallback="${index}" data-tag="${showTag ? 1 : 0}">`;
+  }
+  return plateHTML(project, index, showTag);
+}
+
+/* Broken or missing preview image -> fall back to the generated plate */
+document.addEventListener('error', (e) => {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement) || img.dataset.fallback === undefined) return;
+  const idx = Number(img.dataset.fallback);
+  const wrap = document.createElement('div');
+  wrap.innerHTML = plateHTML(PROJECTS[idx], idx, img.dataset.tag === '1').trim();
+  img.replaceWith(wrap.firstElementChild);
+}, true);
+
+function capsHTML(capabilities) {
+  if (!capabilities || !capabilities.length) return '';
+  return `<ul class="card-caps">${
+    capabilities.map(c => `<li>${esc(c)}</li>`).join('')
+  }</ul>`;
+}
+
+/* ============================================================
+   RENDER — FEATURED
+   ============================================================ */
+function renderFeatured() {
+  const grid = document.getElementById('featuredGrid');
+  const featured = PROJECTS.filter(p => p.featured);
+
+  grid.innerHTML = featured.map((p) => {
+    const index = PROJECTS.indexOf(p);
+    const caseBtn = p.caseStudy
+      ? `<button type="button" class="link-arrow" data-case="${esc(p.id)}">Case Study</button>`
+      : '';
+
+    return `
+      <article class="featured-card">
+        <a class="featured-media"
+           href="${esc(p.liveUrl)}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open ${esc(p.title)} (opens in a new tab)">
+          ${mediaHTML(p, index, true)}
+        </a>
+        <div class="featured-body">
+          <span class="pill pill-light">${esc(p.category)}</span>
+          <h3 class="featured-title">${esc(p.title)}</h3>
+          <p class="featured-desc">${esc(p.shortDescription)}</p>
+          ${capsHTML(p.capabilities)}
+          <div class="card-actions">
+            <a class="link-arrow"
+               href="${esc(p.liveUrl)}"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Project ↗
+            </a>
+            ${caseBtn}
+          </div>
+        </div>
+      </article>`;
+  }).join('');
+}
+
+/* ============================================================
+   RENDER — WORK LIBRARY
+   ============================================================ */
+let activeFilter = 'all';
+
+function renderFilterBar() {
+  const bar = document.getElementById('filterBar');
+  bar.innerHTML = FILTERS.map(f => `
+    <button type="button"
+            class="filter-btn"
+            data-filter="${f.id}"
+            aria-pressed="${f.id === activeFilter}">
+      ${esc(f.label)}
+    </button>`).join('');
+}
+
+const PAGE_SIZE = 12;
+let visibleCount = PAGE_SIZE;
+
+function renderLibrary() {
+  const grid = document.getElementById('workGrid');
+  const count = document.getElementById('resultCount');
+
+  const list = activeFilter === 'all'
+    ? PROJECTS
+    : PROJECTS.filter(p => p.filters.includes(activeFilter));
+
+  if (!list.length) {
+    grid.innerHTML = `<p class="empty-state">No projects in this category yet. Try another filter.</p>`;
+    count.textContent = '0 projects';
+    return;
+  }
+
+  grid.innerHTML = list.slice(0, visibleCount).map((p) => {
+    const index = PROJECTS.indexOf(p);
+    const caseBtn = p.caseStudy
+      ? `<button type="button" class="link-arrow" data-case="${esc(p.id)}">Case Study</button>`
+      : '';
+    const badge = p.isThisSite
+      ? `<span class="badge-this-site">This site</span>`
+      : '';
+
+    return `
+      <article class="card">
+        <a class="card-media"
+           href="${esc(p.liveUrl)}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open ${esc(p.title)} (opens in a new tab)">
+          ${mediaHTML(p, index, false)}
+        </a>
+        <div class="card-body">
+          <span class="pill pill-light">${esc(p.category)}</span>
+          <h3 class="card-title">${esc(p.title)}${badge}</h3>
+          <p class="card-desc">${esc(p.shortDescription)}</p>
+          ${capsHTML(p.capabilities)}
+          <div class="card-actions">
+            <a class="link-arrow"
+               href="${esc(p.liveUrl)}"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Project ↗
+            </a>
+            ${caseBtn}
+          </div>
+        </div>
+      </article>`;
+  }).join('');
+
+  const label = FILTERS.find(f => f.id === activeFilter)?.label || 'All';
+  const shown = Math.min(visibleCount, list.length);
+  count.textContent = activeFilter === 'all'
+    ? `Showing ${shown} of ${list.length} projects`
+    : `Showing ${shown} of ${list.length} in ${label}`;
+
+  let more = document.getElementById('loadMore');
+  if (!more) {
+    more = document.createElement('button');
+    more.type = 'button';
+    more.id = 'loadMore';
+    more.className = 'btn btn-ghost-dark load-more';
+    more.textContent = 'Show more projects';
+    more.addEventListener('click', () => { visibleCount += PAGE_SIZE; renderLibrary(); });
+    grid.after(more);
+  }
+  more.hidden = shown >= list.length;
+}
+
+/* ============================================================
+   FILTER INTERACTION — unchanged
+   ============================================================ */
+document.getElementById('filterBar').addEventListener('click', (e) => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+
+  activeFilter = btn.dataset.filter;
+  visibleCount = PAGE_SIZE;
+
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.setAttribute('aria-pressed', String(b === btn));
+  });
+
+  renderLibrary();
+});
+
+/* ============================================================
+   CASE STUDY DIALOG — unchanged
+   ============================================================ */
+const dialog = document.getElementById('caseDialog');
+const caseContent = document.getElementById('caseContent');
+const caseClose = document.getElementById('caseClose');
+
+function sectionHTML(title, body) {
+  if (!body) return '';
+  return `<section class="case-section"><h3>${esc(title)}</h3>${body}</section>`;
+}
+
+let lastTrigger = null;
+function openCaseStudy(id) {
+  const p = PROJECTS.find(x => x.id === id);
+  if (!p || !p.caseStudy) return;
+
+  const cs = p.caseStudy;
+
+  const featuresHTML = cs.features && cs.features.length
+    ? `<ul>${cs.features.map(f => `<li>${esc(f)}</li>`).join('')}</ul>`
+    : '<p>Not specified.</p>';
+
+  const techHTML = cs.technologies && cs.technologies.length
+    ? `<ul>${cs.technologies.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`
+    : '<p>Not specified.</p>';
+
+  caseContent.innerHTML = `
+    <p class="case-cat">${esc(p.category)}</p>
+    <h2 class="case-title" id="caseTitle">${esc(p.title)}</h2>
+
+    <dl class="case-meta">
+      <div>
+        <dt>Year</dt>
+        <dd>${cs.year ? esc(cs.year) : 'Not specified'}</dd>
+      </div>
+      <div>
+        <dt>Role</dt>
+        <dd>${esc(cs.role || 'Not specified')}</dd>
+      </div>
+      <div>
+        <dt>Category</dt>
+        <dd>${esc(p.category)}</dd>
+      </div>
+    </dl>
+
+    ${sectionHTML('Challenge', `<p>${esc(cs.challenge)}</p>`)}
+    ${sectionHTML('Approach', `<p>${esc(cs.approach)}</p>`)}
+    ${sectionHTML('Solution', `<p>${esc(cs.solution)}</p>`)}
+    ${sectionHTML('Key Features', featuresHTML)}
+    ${sectionHTML('Technology', techHTML)}
+    ${sectionHTML('Outcome / Value', `<p>${esc(cs.outcome)}</p>`)}
+
+    <div class="case-actions">
+      <a class="btn btn-ink"
+         href="${esc(p.liveUrl)}"
+         target="_blank"
+         rel="noopener noreferrer">
+        Open Live Project ↗
+      </a>
+      <button type="button" class="btn btn-ghost-light" data-close-case>Close</button>
+    </div>
+  `;
+
+  if (typeof dialog.showModal === 'function') {
+    dialog.showModal();
+  } else {
+    dialog.setAttribute('open', '');
+  }
+  document.body.style.overflow = 'hidden';
+  const scroller = dialog.querySelector('.case-scroll');
+  if (scroller) scroller.scrollTop = 0;
+}
+
+function closeCaseStudy() {
+  if (dialog.open) dialog.close();
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('click', (e) => {
+  const caseTrigger = e.target.closest('[data-case]');
+  if (caseTrigger) {
+    lastTrigger = caseTrigger;
+    openCaseStudy(caseTrigger.dataset.case);
+    return;
+  }
+  if (e.target.closest('[data-close-case]')) {
+    closeCaseStudy();
+  }
+});
+
+caseClose.addEventListener('click', closeCaseStudy);
+
+dialog.addEventListener('click', (e) => {
+  if (e.target === dialog) closeCaseStudy();
+});
+
+dialog.addEventListener('close', () => {
+  document.body.style.overflow = '';
+  if (lastTrigger && lastTrigger.isConnected) lastTrigger.focus();
+});
+
+/* ============================================================
+   ACTIVE NAV STATE — unchanged
+   ============================================================ */
+function initActiveNav() {
+  const sections = ['home', 'work', 'capabilities', 'about', 'contact']
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+
+  const links = new Map(
+    Array.from(document.querySelectorAll('[data-nav]'))
+      .map(a => [a.dataset.nav, a])
+  );
+
+  const setActive = (id) => {
+    links.forEach((link, key) => {
+      if (key === id) {
+        link.setAttribute('aria-current', 'true');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  };
+
+  if (!('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter(en => en.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, {
+    rootMargin: '-45% 0px -50% 0px',
+    threshold: [0, .2, .5, 1]
+  });
+
+  sections.forEach(s => observer.observe(s));
+}
+
+/* ============================================================
+   INIT
+   ============================================================ */
+renderFilterBar();
+/* Paste your full LinkedIn profile address here, e.g. 'https://www.linkedin.com/in/your-name'.
+   The button stays hidden until this is filled in. */
+const LINKEDIN_URL = 'https://www.linkedin.com/in/guled-hassen-b11636250';
+if (LINKEDIN_URL) {
+  const li = document.getElementById('linkedinBtn');
+  li.href = LINKEDIN_URL;
+  li.hidden = false;
+}
+
+renderFeatured();
+renderLibrary();
+initActiveNav();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Guled Hassen",
+  "jobTitle": "Engineer · Digital Product Builder · Web Developer",
+  "url": "https://guledz.github.io/Guledhassen/",
+  "email": "mailto:Guledh918@gmail.com",
+  "address": {"@type": "PostalAddress", "addressCountry": "ET"},
+  "sameAs": [
+    "https://github.com/guledz",
+    "https://www.linkedin.com/in/guled-hassen-b11636250",
+    "https://guledhassen.vercel.app",
+    "https://guledz.github.io/Guled-Hassen-Professional-Portfolio/"
+  ],
+  "description": "Building practical digital systems, business platforms, data tools, and product experiences for real-world problems."
+}
+</script>
+
+<script>
+(function(){
+  var h=document.querySelector('.site-header');
+  if(!h)return;
+  function set(){h.classList.toggle('is-scrolled',window.scrollY>24)}
+  set();
+  window.addEventListener('scroll',set,{passive:true});
+})();
+</script>
+</body>
+</html>
