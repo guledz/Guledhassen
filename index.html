@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Guled Hassen — Brand &amp; Digital Product Designer</title>
+<meta name="description" content="Guled Hassen is a brand and digital product designer and web developer based in Harar, Ethiopia. I build brand identities, websites, digital catalogues and practical digital tools for real businesses.">
+<meta name="author" content="Guled Hassen">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#15161A">
+<link rel="canonical" href="https://guledz.github.io/Guledhassen/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Guled Hassen">
+<meta property="og:title" content="Guled Hassen — Brand &amp; Digital Product Designer">
+<meta property="og:description" content="I build brands and digital experiences for real businesses. Brand identity, websites, digital catalogues and practical digital tools.">
+<meta property="og:url" content="https://guledz.github.io/Guledhassen/">
+<meta property="og:image" content="https://guledz.github.io/Guledhassen/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Guled Hassen — Brand &amp; Digital Product Designer">
+<meta name="twitter:description" content="I build brands and digital experiences for real businesses.">
+<meta name="twitter:image" content="https://guledz.github.io/Guledhassen/og-cover.png">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   1. TOKENS
+   ============================================================ */
+:root{
+  --ink:#15161A;
+  --ink-2:#1D1F24;
+  --ink-3:#2A2D33;
+  --ivory:#F4EFE6;
+  --ivory-2:#E9E2D5;
+  --paper:#FBF8F2;
+
+  --accent:#B49B7E;         /* taupe, for dark backgrounds */
+  --accent-ink:#7A6248;     /* taupe, for small text on light */
+  --accent-soft:#D9C9B4;
+
+  --on-dark:#F4EFE6;
+  --on-dark-soft:#B9B3A8;
+  --on-dark-mute:#7E7A72;
+  --on-light:#15161A;
+  --on-light-soft:#5B5750;
+  --on-light-mute:#8A857C;
+
+  --line-dark:rgba(244,239,230,.16);
+  --line-dark-soft:rgba(244,239,230,.09);
+  --line-light:rgba(21,22,26,.13);
+  --line-light-soft:rgba(21,22,26,.07);
+
+  --font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --font-mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --font-header:"Montserrat",var(--font-sans);
+
+  --maxw:1320px;
+  --gutter:clamp(20px,4.2vw,56px);
+  --header-h:64px;
+  --ease:cubic-bezier(.2,.6,.2,1);
+}
+
+/* ============================================================
+   2. RESET / BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--header-h) + 20px);
+}
+body{
+  margin:0;
+  background:var(--ivory);
+  color:var(--on-light);
+  font-family:var(--font-sans);
+  font-size:16px;
+  line-height:1.65;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:clip;
+  -webkit-tap-highlight-color:transparent;
+}
+img{max-width:100%;display:block}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px}
+.dark :focus-visible,.hero :focus-visible,.case-dialog :focus-visible{outline-color:var(--accent)}
+[hidden]{display:none!important}
+
+.container{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:max(var(--gutter),env(safe-area-inset-left)) max(var(--gutter),env(safe-area-inset-right));
+}
+
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--ink);color:var(--on-dark);
+  padding:12px 18px;
+  font-family:var(--font-mono);font-size:11px;
+  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+}
+.skip-link:focus{left:0}
+
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ============================================================
+   3. TYPE
+   ============================================================ */
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--accent-ink);
+}
+.dark .eyebrow,.hero .eyebrow,.case-dialog .eyebrow{color:var(--accent)}
+
+/* Display headings: Montserrat Bold Italic */
+.section-title{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.5rem,3.4vw,2.5rem);
+  line-height:1.1;
+  letter-spacing:-.025em;
+  text-wrap:balance;
+}
+
+.section-note{
+  color:var(--on-light-soft);
+  font-size:clamp(.95rem,1.2vw,1.05rem);
+  max-width:44ch;
+}
+.dark .section-note,.hero .section-note{color:var(--on-dark-soft)}
+
+.flag{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:9px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--accent-ink);
+  border:1px solid var(--line-light);
+  border-radius:999px;
+  padding:2px 7px;
+  vertical-align:middle;
+  margin-left:6px;
+  white-space:nowrap;
+}
+
+/* ============================================================
+   4. BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5em;
+  min-height:50px;
+  padding:14px 26px;
+  border:1px solid transparent;
+  border-radius:2px;
+  font-family:var(--font-sans);
+  font-size:13px;
+  font-weight:500;
+  letter-spacing:.02em;
+  text-decoration:none;
+  cursor:pointer;
+  transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease);
+  white-space:nowrap;
+}
+.btn-primary{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.btn-primary:hover{background:var(--ivory);border-color:var(--ivory);color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:var(--line-dark)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-ink{background:var(--ink);color:var(--on-dark);border-color:var(--ink)}
+.btn-ink:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
+.btn-outline{background:transparent;color:var(--on-light);border-color:var(--line-light)}
+.btn-outline:hover{border-color:var(--ink);background:var(--ink);color:var(--on-dark)}
+
+/* ============================================================
+   5. HEADER
+   ============================================================ */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:70;
+  background:transparent;
+  border-bottom:1px solid transparent;
+  padding-top:env(safe-area-inset-top,0px);
+  transition:background-color .3s var(--ease),border-color .3s var(--ease);
+}
+.site-header.is-scrolled{
+  background:rgba(21,22,26,.94);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  backdrop-filter:saturate(180%) blur(14px);
+  border-bottom-color:var(--line-dark-soft);
+}
+.site-header.is-case{
+  background:rgba(21,22,26,.94);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  backdrop-filter:saturate(180%) blur(14px);
+  border-bottom-color:var(--line-dark-soft);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  min-height:var(--header-h);
+}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;color:var(--on-dark)}
+.brand-mark{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--ink-3)}
+.brand-name{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-size:15px;
+  letter-spacing:-.01em;
+}
+.nav{display:flex;align-items:center;gap:clamp(14px,2.6vw,34px);min-width:0}
+.nav a{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--on-dark-soft);
+  padding:10px 0;
+  border-bottom:1px solid transparent;
+  transition:color .18s var(--ease),border-color .18s var(--ease);
+  white-space:nowrap;
+}
+.nav a:hover{color:var(--on-dark);border-bottom-color:var(--accent)}
+.nav a[aria-current="true"]{color:var(--on-dark);border-bottom-color:var(--accent)}
+@media (max-width:640px){
+  .brand-name{display:none}
+  .nav{gap:16px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{font-size:10px;letter-spacing:.12em}
+}
+@media (max-width:380px){.nav a{font-size:9.5px;letter-spacing:.08em}}
+
+/* ============================================================
+   6. HERO
+   ============================================================ */
+.hero{
+  background:var(--ink);
+  color:var(--on-dark);
+  padding-top:calc(var(--header-h) + clamp(40px,6vw,84px));
+  padding-bottom:clamp(44px,6vw,80px);
+  margin-top:calc(var(--header-h) * -1);
+}
+.hero-title{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.9rem,5.2vw,4rem);
+  line-height:1.02;
+  letter-spacing:-.035em;
+  max-width:18ch;
+  margin:clamp(20px,3vw,32px) 0 clamp(32px,4.5vw,56px);
+  text-wrap:balance;
+}
+.hero-title em{font-style:inherit;color:var(--accent)}
+.hero-foot{
+  display:grid;
+  gap:28px;
+  grid-template-columns:1fr;
+  align-items:end;
+}
+@media (min-width:900px){
+  .hero-foot{grid-template-columns:minmax(0,1fr) auto;gap:56px}
+}
+.hero-lede{
+  max-width:50ch;
+  color:var(--on-dark-soft);
+  font-size:clamp(1rem,1.35vw,1.14rem);
+  line-height:1.6;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:520px){.hero-actions .btn{flex:1 1 100%}}
+
+.hero-meta{
+  display:grid;
+  grid-template-columns:1fr;
+  margin-top:clamp(40px,5.5vw,72px);
+  border-top:1px solid var(--line-dark);
+}
+.hero-meta > div{
+  padding:16px 0;
+  border-bottom:1px solid var(--line-dark-soft);
+}
+@media (min-width:780px){
+  .hero-meta{grid-template-columns:repeat(3,1fr)}
+  .hero-meta > div{
+    border-bottom:0;
+    border-right:1px solid var(--line-dark-soft);
+    padding:20px 28px 0 0;
+  }
+  .hero-meta > div + div{padding-left:28px}
+  .hero-meta > div:last-child{border-right:0;padding-right:0}
+}
+.hero-meta dt{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--on-dark-mute);
+  margin-bottom:6px;
+}
+.hero-meta dd{font-size:.94rem;color:var(--on-dark);line-height:1.45}
+.hero-meta a{text-decoration:none;border-bottom:1px solid var(--line-dark);padding-bottom:1px}
+.hero-meta a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+
+/* ============================================================
+   7. SECTION SHELL
+   ============================================================ */
+.section{padding-block:clamp(56px,8vw,116px)}
+.dark{background:var(--ink);color:var(--on-dark)}
+.light{background:var(--ivory);color:var(--on-light)}
+.paper{background:var(--paper);color:var(--on-light)}
+
+.section-head{
+  display:grid;
+  gap:18px;
+  grid-template-columns:1fr;
+  margin-bottom:clamp(32px,4.5vw,60px);
+  padding-top:clamp(20px,3vw,32px);
+  border-top:1px solid var(--line-light);
+}
+@media (min-width:900px){
+  .section-head{grid-template-columns:minmax(0,1fr) minmax(0,.62fr);align-items:end;gap:48px}
+}
+.dark .section-head{border-top-color:var(--line-dark)}
+.section-head .eyebrow{margin-bottom:12px;display:block}
+
+/* ============================================================
+   8. MEDIA
+   ============================================================ */
+.media{
+  position:relative;
+  overflow:hidden;
+  background:var(--ivory-2);
+  border:1px solid var(--line-light-soft);
+}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.media--wide{aspect-ratio:16/9}
+.media--4x3{aspect-ratio:4/3}
+.media--3x2{aspect-ratio:3/2}
+.media--logo{background:var(--logo-bg,#FFFFFF);display:grid;place-items:center}
+.media--logo img{object-fit:contain;padding:clamp(20px,4vw,52px)}
+.media--placeholder{
+  display:grid;
+  place-content:center;
+  justify-items:center;
+  gap:10px;
+  aspect-ratio:16/9;
+  background:repeating-linear-gradient(135deg,var(--ink-2) 0 10px,var(--ink-3) 10px 11px);
+  border:1px solid var(--line-dark);
+  color:var(--on-dark-soft);
+  text-align:center;
+  padding:24px;
+}
+.ph-mark{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(2rem,5vw,3.4rem);
+  line-height:1;
+  color:var(--accent);
+  letter-spacing:-.02em;
+}
+.ph-note{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.light .media--placeholder,.paper .media--placeholder{
+  background:repeating-linear-gradient(135deg,var(--ivory-2) 0 10px,#DFD7C8 10px 11px);
+  border-color:var(--line-light);
+  color:var(--on-light-soft);
+}
+.light .ph-mark,.paper .ph-mark{color:var(--accent-ink)}
+
+.media-note{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.1em;
+  color:var(--on-light-mute);
+  margin-top:10px;
+  line-height:1.5;
+}
+
+/* ============================================================
+   9. LEAD PROJECTS
+   ============================================================ */
+.project{
+  display:grid;
+  gap:clamp(18px,2.6vw,28px);
+  padding-block:clamp(36px,5vw,64px);
+  border-top:1px solid var(--line-light);
+}
+.project:first-of-type{border-top:0;padding-top:0}
+.project:last-of-type{padding-bottom:0}
+
+.project-media{display:block;text-decoration:none;color:inherit}
+.project-media .media{transition:border-color .25s var(--ease)}
+@media (hover:hover){.project-media:hover .media{border-color:var(--line-light)}}
+
+.project-body{display:grid;gap:clamp(20px,3vw,40px);grid-template-columns:1fr}
+@media (min-width:900px){
+  .project-body{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:start}
+}
+
+.project-index{
+  display:block;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.2em;
+  color:var(--accent-ink);
+  margin-bottom:12px;
+}
+.project-title{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.3rem,2.4vw,2rem);
+  line-height:1.12;
+  letter-spacing:-.025em;
+  margin-bottom:6px;
+}
+.project-sub{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+  margin-bottom:16px;
+}
+.project-value{
+  font-size:clamp(1rem,1.3vw,1.1rem);
+  color:var(--on-light);
+  line-height:1.55;
+  max-width:46ch;
+  margin-bottom:16px;
+}
+.project-need{
+  font-size:.94rem;
+  color:var(--on-light-soft);
+  line-height:1.6;
+  max-width:52ch;
+}
+.project-need strong{color:var(--on-light);font-weight:600}
+
+.facts{display:grid;gap:14px;margin-bottom:24px}
+.facts > div{display:grid;gap:3px}
+.facts dt{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+}
+.facts dd{font-size:.92rem;color:var(--on-light);line-height:1.5}
+.dark .facts dt,.case-dialog .facts dt{color:var(--on-dark-mute)}
+.dark .facts dd{color:var(--on-dark)}
+
+.project-actions{display:flex;flex-wrap:wrap;gap:10px}
+
+/* Split (alternating) variant */
+@media (min-width:900px){
+  .project--split{
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+    gap:clamp(32px,5vw,72px);
+    align-items:center;
+  }
+  .project--split .project-media{order:2}
+  .project--split .project-body{order:1;grid-template-columns:1fr;gap:24px}
+}
+
+/* Secondary pair */
+.pair{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(24px,3.5vw,44px);
+  margin-top:clamp(40px,6vw,72px);
+  padding-top:clamp(32px,4.5vw,56px);
+  border-top:1px solid var(--line-light);
+}
+@media (min-width:820px){.pair{grid-template-columns:repeat(2,1fr)}}
+.pair-item{display:grid;gap:16px;align-content:start}
+.pair-item .media{aspect-ratio:3/2}
+.pair-item h3{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.05rem,1.65vw,1.35rem);
+  line-height:1.18;
+  letter-spacing:-.025em;
+}
+.pair-item p{font-size:.94rem;color:var(--on-light-soft);line-height:1.6;max-width:46ch}
+.pair-links{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.link-arrow{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--on-light);
+  border-bottom:1px solid var(--line-light);
+  padding:8px 0 6px;
+  background:none;
+  cursor:pointer;
+  transition:color .2s var(--ease),border-color .2s var(--ease);
+  font-weight:500;
+}
+.link-arrow:hover{color:var(--accent-ink);border-bottom-color:var(--accent-ink)}
+.dark .link-arrow{color:var(--on-dark);border-bottom-color:var(--line-dark)}
+.dark .link-arrow:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ============================================================
+   10. SERVICES
+   ============================================================ */
+.service-list{border-top:1px solid var(--line-dark)}
+.service{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px 32px;
+  padding:clamp(22px,3vw,34px) 0;
+  border-bottom:1px solid var(--line-dark-soft);
+}
+@media (min-width:820px){
+  .service{grid-template-columns:70px minmax(0,.85fr) minmax(0,1.15fr);align-items:start;gap:0 32px}
+}
+.service-num{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.2em;
+  color:var(--accent);
+  padding-top:.5em;
+}
+.service-title{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.05rem,1.7vw,1.4rem);
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+.service-desc{
+  font-size:.94rem;
+  color:var(--on-dark-soft);
+  line-height:1.65;
+  max-width:54ch;
+  margin-top:8px;
+}
+@media (min-width:820px){.service-desc{margin-top:0}}
+
+/* ============================================================
+   11. ABOUT
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1fr;gap:clamp(28px,4.5vw,64px);align-items:start}
+@media (min-width:900px){.about-grid{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr)}}
+
+.about-portrait{margin:0}
+.about-portrait .media{aspect-ratio:4/5;background:var(--ivory-2)}
+.about-portrait img{object-fit:cover;object-position:center 30%;filter:saturate(.94)}
+.about-portrait figcaption{
+  margin-top:12px;
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+}
+
+.about-copy .section-title{margin-bottom:clamp(20px,3vw,32px)}
+.about-copy p{
+  color:var(--on-light-soft);
+  font-size:clamp(.98rem,1.25vw,1.06rem);
+  line-height:1.7;
+  max-width:60ch;
+  margin-bottom:18px;
+}
+.about-copy strong{color:var(--on-light);font-weight:600}
+.about-facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 10px;
+  margin:26px 0 30px;
+}
+.about-facts li{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-light-soft);
+  border:1px solid var(--line-light);
+  border-radius:999px;
+  padding:6px 12px;
+}
+
+/* ============================================================
+   12. MORE WORK GALLERY
+   ============================================================ */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filter-btn{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  min-height:42px;
+  padding:11px 16px;
+  border:1px solid var(--line-light);
+  background:transparent;
+  color:var(--on-light-soft);
+  border-radius:999px;
+  cursor:pointer;
+  transition:all .2s var(--ease);
+  font-weight:500;
+}
+.filter-btn:hover{border-color:var(--ink);color:var(--on-light)}
+.filter-btn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--on-dark)}
+@media (max-width:640px){
+  .filter-bar{
+    flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+    margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);
+    -webkit-overflow-scrolling:touch;
+  }
+  .filter-bar::-webkit-scrollbar{display:none}
+  .filter-btn{flex:0 0 auto;white-space:nowrap}
+}
+.result-count{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+  margin-bottom:clamp(22px,3vw,32px);
+}
+
+.gallery{display:grid;grid-template-columns:1fr;gap:clamp(16px,2vw,26px)}
+@media (min-width:640px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.gallery{grid-template-columns:repeat(3,1fr)}}
+
+.gcard{display:grid;gap:12px;align-content:start}
+.gcard a{text-decoration:none;color:inherit}
+.gcard .media{aspect-ratio:16/10;transition:border-color .25s var(--ease)}
+@media (hover:hover){.gcard a:hover .media{border-color:var(--line-light)}}
+.gcard h3{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:.95rem;
+  letter-spacing:-.015em;
+  line-height:1.25;
+  margin-top:2px;
+}
+.gcard .gmeta{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.gcard .gmeta span + span::before{content:"·";margin-right:10px}
+
+.empty-state{
+  grid-column:1/-1;
+  padding:48px 0;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+}
+
+/* ============================================================
+   13. CONTACT / FOOTER
+   ============================================================ */
+.contact{background:var(--ink);color:var(--on-dark);padding-block:clamp(60px,8vw,116px)}
+.contact .eyebrow{display:block;margin-bottom:20px}
+.contact-title{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.5rem,4vw,3.1rem);
+  line-height:1.06;
+  letter-spacing:-.03em;
+  max-width:16ch;
+  margin-bottom:clamp(20px,3vw,30px);
+}
+.contact-lede{
+  color:var(--on-dark-soft);
+  font-size:clamp(1rem,1.3vw,1.1rem);
+  max-width:48ch;
+  margin-bottom:clamp(28px,4vw,40px);
+}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:clamp(32px,4vw,48px)}
+@media (max-width:520px){.contact-actions .btn{flex:1 1 100%}}
+.contact-email{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(.95rem,1.9vw,1.45rem);
+  letter-spacing:-.02em;
+  margin-bottom:clamp(28px,4vw,40px);
+}
+.contact-email a{text-decoration:none;border-bottom:1px solid var(--line-dark);padding-bottom:2px}
+.contact-email a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.contact-secondary{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 28px;
+  padding-top:26px;
+  border-top:1px solid var(--line-dark);
+}
+.contact-secondary a{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--on-dark-soft);
+  padding:6px 0;
+  transition:color .18s var(--ease);
+}
+.contact-secondary a:hover{color:var(--accent)}
+
+.site-footer{
+  background:var(--ink);
+  color:var(--on-dark-mute);
+  border-top:1px solid var(--line-dark-soft);
+  padding-block:26px max(26px,env(safe-area-inset-bottom));
+}
+.footer-inner{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between}
+.footer-brand{font-size:12.5px;color:var(--on-dark-soft)}
+.footer-nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+.footer-nav a{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--on-dark-soft);
+  padding:6px 0;
+}
+.footer-nav a:hover{color:var(--accent)}
+.footer-meta{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+
+/* ============================================================
+   14. CASE STUDY VIEW
+   ============================================================ */
+#caseView{background:var(--paper);color:var(--on-light);padding-bottom:clamp(56px,8vw,110px)}
+.case-wrap{padding-top:calc(var(--header-h) + clamp(24px,3.5vw,48px))}
+
+.back-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--on-light-soft);
+  padding:10px 0;
+  margin-bottom:clamp(20px,3vw,32px);
+  transition:color .18s var(--ease);
+}
+.back-link:hover{color:var(--accent-ink)}
+
+.case-head{padding-bottom:clamp(24px,3.5vw,40px);border-bottom:1px solid var(--line-light);margin-bottom:clamp(24px,3.5vw,40px)}
+.case-title{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1.5rem,4vw,3rem);
+  line-height:1.06;
+  letter-spacing:-.03em;
+  margin:12px 0 16px;
+  max-width:20ch;
+}
+.case-value{
+  font-size:clamp(1.02rem,1.5vw,1.24rem);
+  color:var(--on-light-soft);
+  line-height:1.55;
+  max-width:56ch;
+}
+
+.case-hero{margin:0 0 12px}
+.case-hero .media{aspect-ratio:16/9}
+
+.case-facts{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+  border-top:1px solid var(--line-light);
+  margin:clamp(24px,3.5vw,40px) 0 clamp(32px,4.5vw,56px);
+}
+@media (min-width:720px){.case-facts{grid-template-columns:repeat(4,1fr)}}
+.case-facts > div{
+  padding:18px 0;
+  border-bottom:1px solid var(--line-light-soft);
+}
+@media (min-width:720px){
+  .case-facts > div{border-bottom:0;border-right:1px solid var(--line-light-soft);padding:20px 24px 20px 0}
+  .case-facts > div + div{padding-left:24px}
+  .case-facts > div:last-child{border-right:0;padding-right:0}
+}
+.case-facts dt{
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+  margin-bottom:7px;
+}
+.case-facts dd{font-size:.92rem;line-height:1.5;color:var(--on-light)}
+
+.case-section{
+  padding-top:clamp(24px,3.5vw,36px);
+  margin-top:clamp(24px,3.5vw,36px);
+  border-top:1px solid var(--line-light);
+  display:grid;
+  gap:14px;
+}
+@media (min-width:900px){.case-section{grid-template-columns:minmax(0,.32fr) minmax(0,.68fr);gap:40px}}
+.case-section h2{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent-ink);
+  font-weight:500;
+  padding-top:4px;
+}
+.case-section .case-body > * + *{margin-top:16px}
+.case-section p{color:var(--on-light-soft);font-size:1rem;line-height:1.7;max-width:66ch}
+.case-section ul{display:grid;gap:12px;max-width:66ch}
+.case-section li{
+  position:relative;
+  padding-left:18px;
+  color:var(--on-light-soft);
+  font-size:.96rem;
+  line-height:1.6;
+}
+.case-section li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--accent-ink)}
+.case-section li strong{color:var(--on-light);font-weight:600}
+
+.case-gallery{display:grid;gap:clamp(14px,2vw,24px);margin-top:20px}
+@media (min-width:760px){.case-gallery{grid-template-columns:repeat(2,1fr)}}
+.case-gallery figure{margin:0}
+.case-gallery figcaption{
+  margin-top:10px;
+  font-size:.85rem;
+  color:var(--on-light-mute);
+  line-height:1.5;
+}
+
+.callout{
+  border-left:2px solid var(--accent-ink);
+  background:rgba(122,98,72,.06);
+  padding:16px 20px;
+  font-size:.92rem;
+  line-height:1.65;
+  color:var(--on-light-soft);
+  max-width:66ch;
+}
+
+.case-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:clamp(32px,4vw,48px);
+  padding-top:clamp(24px,3vw,32px);
+  border-top:1px solid var(--line-light);
+}
+
+.case-next{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:clamp(40px,6vw,72px);
+  padding-top:clamp(24px,3vw,32px);
+  border-top:1px solid var(--line-light);
+  text-decoration:none;
+  color:inherit;
+}
+.case-next span{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--on-light-mute);
+  display:block;
+  margin-bottom:6px;
+}
+.case-next strong{
+  font-family:var(--font-header);
+  font-weight:700;
+  font-style:italic;
+  font-size:clamp(1rem,1.9vw,1.5rem);
+  line-height:1.15;
+  letter-spacing:-.025em;
+}
+.case-next:hover strong{color:var(--accent-ink)}
+
+/* ============================================================
+   15. MOTION
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Guled Hassen — home">
+      <img class="brand-mark" src="logo.png" alt="" width="30" height="30" decoding="async">
+      <span class="brand-name">Guled Hassen</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work" data-nav="work">Work</a>
+      <a href="#services" data-nav="services">Services</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==========================================================
+       HOME VIEW
+       ========================================================== -->
+  <div id="homeView">
+
+    <!-- ---------- HERO ---------- -->
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">Brand &amp; Digital Product Designer · Harar, Ethiopia</p>
+
+        <h1 class="hero-title">I build brands and digital experiences for <em>real businesses</em>.</h1>
+
+        <div class="hero-foot">
+          <p class="hero-lede">
+            I’m Guled Hassen, a designer and web developer based in Harar, Ethiopia.
+            I create brand identities, websites, and practical digital tools.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View Selected Work</a>
+            <a class="btn btn-ghost" href="#contact">Discuss a Project</a>
+          </div>
+        </div>
+
+        <dl class="hero-meta">
+          <div>
+            <dt>Focus</dt>
+            <dd>Brand identity · Websites · Digital products</dd>
+          </div>
+          <div>
+            <dt>Based in</dt>
+            <dd>Harar, Ethiopia</dd>
+          </div>
+          <div>
+            <dt>Contact</dt>
+            <dd>
+              <a href="mailto:Guledh918@gmail.com">Guledh918@gmail.com</a><br>
+              <a href="tel:+251915415011">0915 415 011</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ---------- SELECTED WORK ---------- -->
+    <section class="section light" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <span class="eyebrow">01 — Selected work</span>
+            <h2 class="section-title" id="work-title">Two recent builds, in detail.</h2>
+          </div>
+          <p class="section-note">
+            Both are furniture businesses in Harar that were doing well offline and
+            needed a clearer digital presence. Each has a full case study.
+          </p>
+        </header>
+
+        <div id="leadProjects"></div>
+        <div class="pair" id="secondaryProjects"></div>
+      </div>
+    </section>
+
+    <!-- ---------- SERVICES ---------- -->
+    <section class="section dark" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <span class="eyebrow">02 — Services</span>
+            <h2 class="section-title" id="services-title">What I can do for a business.</h2>
+          </div>
+          <p class="section-note">
+            Four areas of work. Each one starts from a business problem, not a
+            deliverable list.
+          </p>
+        </header>
+
+        <ol class="service-list">
+          <li class="service">
+            <span class="service-num">01</span>
+            <h3 class="service-title">Brand Identity</h3>
+            <p class="service-desc">
+              For businesses whose identity is inconsistent across signage, print
+              and screen. Logo systems, colour, typography and application rules
+              that hold together everywhere the brand appears.
+            </p>
+          </li>
+          <li class="service">
+            <span class="service-num">02</span>
+            <h3 class="service-title">Websites &amp; Digital Catalogs</h3>
+            <p class="service-desc">
+              For businesses with a real product range but no way to show it.
+              Filterable catalogues, product structure, company profiles and
+              enquiry paths that turn browsing into a conversation.
+            </p>
+          </li>
+          <li class="service">
+            <span class="service-num">03</span>
+            <h3 class="service-title">Digital Products &amp; Tools</h3>
+            <p class="service-desc">
+              For work that lives in spreadsheets, folders and memory. Dashboards,
+              registries and small utilities that make information findable and
+              comparable.
+            </p>
+          </li>
+          <li class="service">
+            <span class="service-num">04</span>
+            <h3 class="service-title">Social Media &amp; Business Presentation</h3>
+            <p class="service-desc">
+              For businesses that are seen before they are visited. Post and
+              campaign layouts, profile systems and presentation decks that carry
+              the same identity as the website.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ---------- ABOUT ---------- -->
+    <section class="section light" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <span class="eyebrow">03 — About</span>
+            <h2 class="section-title" id="about-title">Harar-born. Engineer-trained. Built for the web.</h2>
+          </div>
+          <p class="section-note">
+            The background behind the work.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <figure class="about-portrait">
+            <div class="media">
+              <img src="profile.png"
+                   alt="Portrait of Guled Hassen"
+                   width="800" height="1000"
+                   loading="lazy" decoding="async"
+                   data-fallback="Portrait"
+                   data-mark="GH">
+            </div>
+            <figcaption>Guled Hassen — Harar, Ethiopia</figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <p>
+              I was born in Harar, Ethiopia in 1994 and trained as an
+              <strong>engineer</strong>, graduating in 2016. Since then I have
+              worked as a contractor, run a bakery business and worked in a
+              municipality office — three very different organisations with the
+              same recurring problem: information that is hard to find, hard to
+              compare and hard to trust.
+            </p>
+            <p>
+              That is the thread running through my design work. I build brand
+              identities, websites, digital catalogues and small tools that make a
+              business easier to understand and easier to buy from. Most of my
+              projects are for Ethiopian businesses — furniture, coffee, medical
+              supply, construction, hospitality — and most of them start the same
+              way: a business that works well offline and is almost invisible
+              online.
+            </p>
+            <p>
+              I work end to end. Structure first, then interface, then build.
+              Everything I ship is <strong>responsive, hand-written HTML, CSS and
+              JavaScript</strong>, and built so it can be extended later without a
+              rewrite.
+            </p>
+
+            <ul class="about-facts">
+              <li>Based in Harar, Ethiopia</li>
+              <li>Engineering graduate, 2016</li>
+              <li>Brand · Web · Digital products</li>
+              <li>End-to-end delivery</li>
+            </ul>
+
+            <a class="btn btn-outline" href="#contact">Discuss a Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- MORE WORK ---------- -->
+    <section class="section paper" id="more" aria-labelledby="more-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <span class="eyebrow">04 — More work</span>
+            <h2 class="section-title" id="more-title">The rest of the archive.</h2>
+          </div>
+          <p class="section-note">
+            Live projects outside the main case studies. Filter by type.
+          </p>
+        </header>
+
+        <div class="filter-bar" id="filterBar" role="group" aria-label="Filter projects by type"></div>
+        <p class="result-count" id="resultCount" role="status" aria-live="polite"></p>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ---------- CONTACT ---------- -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <span class="eyebrow">05 — Contact</span>
+        <h2 class="contact-title" id="contact-title">Have a business that needs a clearer digital presence?</h2>
+        <p class="contact-lede">
+          Tell me what the business does and where it gets stuck online.
+          I’ll tell you honestly whether I’m the right person to build it.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:Guledh918@gmail.com?subject=Project%20enquiry">Discuss a Project</a>
+          <a class="btn btn-ghost" href="tel:+251915415011">Call 0915 415 011</a>
+        </div>
+
+        <p class="contact-email">
+          <a href="mailto:Guledh918@gmail.com">Guledh918@gmail.com</a>
+        </p>
+
+        <div class="contact-secondary">
+          <a href="tel:+251915415011">Call 0915 415 011</a>
+          <a href="https://github.com/guledz" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/guled-hassen-b11636250" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /#homeView -->
+
+  <!-- ==========================================================
+       CASE STUDY VIEW (rendered by the router)
+       ========================================================== -->
+  <div id="caseView" hidden></div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-brand">Guled Hassen — Brand &amp; Digital Product Designer</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-meta">Harar, Ethiopia</p>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   HELPERS
+   ============================================================ */
+const $  = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+const esc = (str) => String(str ?? '')
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;');
+
+const prefersReducedMotion = () =>
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ============================================================
+   CONTENT DATA
+   ------------------------------------------------------------
+   Everything the page renders lives here. `verified:false` means
+   the detail has not been confirmed by the client/owner and is
+   surfaced with an "unconfirmed" flag rather than presented as fact.
+   ============================================================ */
+
+/* ---------- 1. LEAD + SECONDARY PROJECTS ---------- */
+const PROJECTS = [
+
+  /* ---------- 01 — JEGOL FURNITURE ---------- */
+  {
+    id: 'jegol-furniture',
+    index: '01',
+    tier: 'lead',
+    title: 'Jegol Furniture & Woodwork',
+    subtitle: 'Product catalogue',
+    category: 'Websites',
+    year: '2026',
+    yearVerified: false,
+    value: 'A filterable catalogue that lets a woodwork manufacturer show its full range without a salesperson in the room.',
+    need: 'Jegol has been manufacturing furniture since 2010, but the range lived in a showroom and in conversation. Buyers arriving online had no way to see the categories, compare pieces, or judge the standard of the work.',
+    role: 'Design and development',
+    scope: ['Catalogue structure', 'Filterable product browsing', 'Company profile', 'Showroom location', 'Responsive front-end'],
+    live: 'https://jegolfurniture.github.io/Catalog-/',
+    logo: 'jegol-logo.png',
+    logoAlt: 'Jegol Furniture & Woodwork logo',
+    logoBg: '#FFFFFF',
+    mediaNote: 'Full-page screenshots pending — add assets/work/jegol-furniture/cover.webp and mobile.webp.',
+    caseStudy: {
+      title: 'Jegol Furniture & Woodwork — Catalog',
+      value: 'A filterable catalogue that lets a woodwork manufacturer show its full range without a salesperson in the room.',
+      facts: [
+        { label: 'Project', value: 'Jegol Furniture &amp; Woodwork' },
+        { label: 'Role', value: 'Design and development <span class="flag">to confirm</span>' },
+        { label: 'Scope', value: 'Catalogue structure, filtering, company profile, showroom location, responsive front-end' },
+        { label: 'Year', value: '2026 <span class="flag">unconfirmed</span>' }
+      ],
+      sections: [
+        {
+          title: 'The challenge',
+          body: `<p>Jegol manufactures across bedroom sets, majlis, dining, kitchens, wardrobes, doors and children’s furniture. That breadth is the selling point — and also the problem. With no browsable structure online, a buyer can only discover the range by visiting the showroom or asking directly. Printed catalogues go out of date the moment a model changes.</p>`
+        },
+        {
+          title: 'Approach and decisions',
+          body: `<ul>
+            <li><strong>Category-first browsing.</strong> The range is split into the categories customers already ask for — bedroom, majlis, dining, kitchens, wardrobes, doors, children — so the first decision on the site is a familiar one.</li>
+            <li><strong>One product record, repeated.</strong> Every item uses the same image ratio, naming pattern and description length, so the catalogue reads as a set rather than a pile of photographs.</li>
+            <li><strong>Filtering instead of scrolling.</strong> Filters let a buyer narrow to what their room and budget actually need, rather than paging through everything.</li>
+            <li><strong>Business context beside the products.</strong> The company profile and showroom location sit alongside the catalogue, because the next step for a furniture buyer is usually a visit.</li>
+            <li><strong>Built to be extended.</strong> Plain HTML, CSS and JavaScript, so new products and categories can be added without a build pipeline.</li>
+          </ul>`
+        },
+        {
+          title: 'The finished site',
+          body: `<p>A visitor lands on the catalogue, narrows by category, opens a product, and can see the company’s history and showroom location without leaving the catalogue flow. The same structure collapses to a single column on a phone, which is where most of the traffic arrives.</p>
+          <p class="media-note">Screenshots of the desktop catalogue, a filtered category view and the mobile layout are pending — see the asset handoff list.</p>`
+        },
+        {
+          title: 'Deliverables',
+          body: `<ul>
+            <li>Catalogue information architecture and category structure</li>
+            <li>Filterable product browsing interface</li>
+            <li>Company profile section</li>
+            <li>Showroom location section</li>
+            <li>Responsive front-end build (HTML, CSS, JavaScript)</li>
+          </ul>`
+        },
+        {
+          title: 'Value',
+          body: `<p><strong>Intended value:</strong> a buyer can see the full range before travelling, and arrive at the showroom already knowing what they want.</p>
+          <p>No traffic, sales or conversion figures are claimed here. None have been measured or supplied, and none are inferred from the live site.</p>`
+        }
+      ]
+    }
+  },
+
+  /* ---------- 02 — DURSA ---------- */
+  {
+    id: 'dursa',
+    index: '02',
+    tier: 'lead',
+    title: 'DURSA Arabian Majlis & Furniture',
+    subtitle: 'Furniture showroom, online',
+    category: 'Websites',
+    year: '2026',
+    yearVerified: false,
+    value: 'Bringing a furniture showroom online — majlis, living, dining, bedroom and curtains, presented so a buyer can judge scale and context before visiting.',
+    need: 'DURSA sells Arabian majlis and furniture from a physical showroom in Harar. A majlis is a considered purchase: the buyer needs to understand seating arrangement, scale and how the piece behaves inside a room. A flat product grid does not answer those questions.',
+    role: 'Design and development',
+    scope: ['Website design and development', 'Application of the existing brand identity', 'Product-image direction', 'Digital asset organisation', 'Quotation-based enquiry'],
+    live: 'https://guledz.github.io/DURSA-Furniture/index.html',
+    logo: 'dursa-logo.png',
+    logoAlt: 'DURSA Arabian Majlis & Furniture logo',
+    logoBg: '#FFFFFF',
+    mediaNote: 'Full-page screenshots pending — add assets/work/dursa/cover.webp, majlis-views.webp and mobile.webp.',
+    caseStudy: {
+      title: 'DURSA Arabian Majlis & Furniture',
+      value: 'Bringing a furniture showroom online.',
+      facts: [
+        { label: 'Client / project', value: 'DURSA Arabian Majlis &amp; Furniture' },
+        { label: 'Role', value: 'Design and development <span class="flag">to confirm</span>' },
+        { label: 'Scope', value: 'Website design, catalogue structure, product-image direction, asset organisation, quotation enquiry' },
+        { label: 'Year', value: '2026 <span class="flag">unconfirmed</span>' }
+      ],
+      sections: [
+        {
+          title: 'The challenge',
+          body: `<p>DURSA’s range is large and visual: majlis seating, living and dining furniture, bedroom sets and curtains. In a showroom a salesperson can walk a customer through it. Online, that guidance disappears — and a majlis in particular is hard to judge from a single cropped photograph, because its shape only makes sense with the room around it.</p>`
+        },
+        {
+          title: 'Approach and decisions',
+          body: `<ul>
+            <li><strong>The existing identity is preserved.</strong> The approved DURSA logo is used exactly as supplied. It was not redesigned, redrawn or colour-shifted.</li>
+            <li><strong>Three views per majlis.</strong> Each majlis is presented as a <em>studio</em> view (shape and product detail), a <em>showroom</em> view (the piece in its retail setting), and a <em>styled home</em> view (the piece inside a finished interior). Each one answers a different question the buyer is asking.</li>
+            <li><strong>Browsing organised by collection.</strong> Majlis, living, dining, bedroom and curtains, so a visitor starts from the room they are furnishing rather than from a full inventory.</li>
+            <li><strong>Product-image direction and asset organisation.</strong> Consistent product identifiers, filenames and image classifications, so that a growing library of product photographs stays findable and reusable.</li>
+            <li><strong>Quotation-based enquiries, not checkout.</strong> A majlis purchase is a conversation. The site is built to open that conversation, not to process a card payment.</li>
+          </ul>`
+        },
+        {
+          title: 'Honest note on the imagery',
+          body: `<div class="callout">Some interior scenes are <strong>digitally styled or AI-generated visualisations</strong>, used to show scale and context. They are not documentary photographs of completed installations and are not presented as such on the site.</div>`
+        },
+        {
+          title: 'The finished site',
+          body: `<p>The visitor picks a collection, opens a product, and can move between the studio, showroom and styled-home views of the same piece before deciding whether to request a quotation. The layout keeps large product imagery readable on both a wide desktop screen and a phone.</p>
+          <p class="media-note">Screenshots of the majlis three-view layout, the collection index and the mobile product page are pending — see the asset handoff list.</p>`
+        },
+        {
+          title: 'Deliverables',
+          body: `<ul>
+            <li>Website design and front-end development</li>
+            <li>Application of the client’s existing brand identity (logo unaltered)</li>
+            <li>Product-image direction and digital asset organisation</li>
+            <li>Arabian majlis presentation across studio, showroom and styled-home views</li>
+            <li>Product browsing and quotation-based enquiry path</li>
+            <li>Consistent product identifiers, filenames and image classifications</li>
+          </ul>`
+        },
+        {
+          title: 'Value',
+          body: `<p><strong>Intended value:</strong> a customer can understand a majlis — its shape, scale and setting — before travelling to the showroom, and arrive ready to talk about a specific piece.</p>
+          <p>No payments, mobile apps or measured sales improvements are claimed. The quotation and messaging actions should be verified in production before they are described as operational.</p>`
+        }
+      ]
+    }
+  },
+
+  /* ---------- 03 — HBN CONCEPT ---------- */
+  {
+    id: 'hbn',
+    index: '03',
+    tier: 'secondary',
+    title: 'HBN — Harari Broadcasting Network',
+    subtitle: 'Independent identity concept',
+    category: 'Brand Identity',
+    year: '',
+    yearVerified: false,
+    value: 'An independent redesign concept exploring the Harar gate emblem and an HBN monogram as a single broadcast mark.',
+    need: 'A regional broadcaster needs a mark that survives at three sizes: on air, on a phone screen, and stamped on a document. The Harar gate is the strongest local symbol available, and a monogram is the strongest shorthand for the network.',
+    role: 'Identity concept and design',
+    scope: ['Emblem and monogram study', 'Lock-up rules', 'Single-colour reproduction', 'Application direction'],
+    live: '',
+    concept: true,
+    placeholderMark: 'HBN',
+    placeholderNote: 'Concept artwork pending',
+    caseStudy: {
+      title: 'HBN — Harari Broadcasting Network',
+      value: 'An independent redesign concept for a regional broadcaster’s identity.',
+      conceptNote: true,
+      facts: [
+        { label: 'Project', value: 'Independent concept — not a commissioned project' },
+        { label: 'Role', value: 'Identity concept and design' },
+        { label: 'Scope', value: 'Emblem and monogram study, lock-up rules, single-colour reproduction' },
+        { label: 'Status', value: 'Concept <span class="flag">unpublished</span>' }
+      ],
+      sections: [
+        {
+          title: 'Status of this work',
+          body: `<div class="callout">This is an <strong>independent redesign concept</strong>. It is not a commissioned project and has not been approved by, delivered to, or endorsed by Harari Broadcasting Network. It is presented here as a design study only.</div>`
+        },
+        {
+          title: 'The idea',
+          body: `<p>The concept puts the Harar gate inside a circle and sets the HBN monogram within it, so the emblem carries both the place and the network in one shape. The circle is the constraint: it holds the mark together at broadcast scale, at app-icon size, and when stamped in a single colour on a document.</p>`
+        },
+        {
+          title: 'Decisions under review',
+          body: `<ul>
+            <li><strong>One shape, three sizes.</strong> The mark is drawn to survive as a full lock-up, as a circular badge, and as the monogram alone.</li>
+            <li><strong>Single-colour first.</strong> The mark is resolved in one ink before any colour is introduced, so it still works on signage, print and screen.</li>
+            <li><strong>The gate stays legible.</strong> The emblem is simplified to its recognisable silhouette rather than reproduced as an illustration.</li>
+          </ul>`
+        },
+        {
+          title: 'Artwork status',
+          body: `<p class="media-note">The logo artwork is not published here. Vector files are not yet in the repository, and the mark has not been cleared for public display. To publish this case study, add the artwork to <code>assets/work/hbn/</code> and confirm that the concept may be shown publicly.</p>`
+        },
+        {
+          title: 'Value',
+          body: `<p><strong>Intended value:</strong> a single, locally rooted mark that holds up across broadcast, print and digital use — and that could be adopted without a full rebrand.</p>`
+        }
+      ]
+    }
+  },
+
+  /* ---------- 04 — ORCA 2019 ---------- */
+  {
+    id: 'orca-2019',
+    index: '04',
+    tier: 'secondary',
+    title: 'ORCA 2019 — Construction Market Survey Data',
+    subtitle: 'Digital data tool',
+    category: 'Digital Tools',
+    year: '2019',
+    yearVerified: true,
+    value: 'A 2019 construction-industry market survey, turned into something searchable instead of a spreadsheet nobody opens.',
+    need: 'A market survey produces a large, structured table of fields. In its original form it is difficult to search, compare or reuse without spreadsheet skills — so the data exists but does not get used.',
+    role: 'Data structuring, interface design, development',
+    scope: ['Dataset structuring', 'Search and filtering', 'Data interface', 'Technical documentation'],
+    live: 'https://guledz.github.io/ORCA-2019construction-industry-market-survey-data/',
+    image: 'orca-2019.png',
+    imageAlt: 'ORCA 2019 construction industry market survey data interface',
+    caseStudy: {
+      title: 'ORCA 2019 — Construction Market Survey Data',
+      value: 'A historical construction-market dataset, turned into a searchable digital reference.',
+      facts: [
+        { label: 'Project', value: 'ORCA 2019 construction industry market survey' },
+        { label: 'Role', value: 'Data structuring, interface design, development' },
+        { label: 'Scope', value: 'Dataset structuring, search and filtering, data interface' },
+        { label: 'Year', value: '2019 survey' }
+      ],
+      sections: [
+        {
+          title: 'The challenge',
+          body: `<p>The survey produces a large volume of structured records. In its raw form it is difficult to search, hard to compare across records, and easy to abandon. The value of the data depends entirely on whether someone can get at it.</p>`
+        },
+        {
+          title: 'Approach and decisions',
+          body: `<ul>
+            <li><strong>Structure before surface.</strong> The dataset was normalised first — consistent fields, consistent naming — before any interface was designed.</li>
+            <li><strong>An interface that does not require spreadsheet skills.</strong> A reader can search and browse records directly, without knowing how to filter a table.</li>
+            <li><strong>Readable fields.</strong> Survey fields are presented in a way a non-specialist can interpret, rather than as raw column headers.</li>
+          </ul>`
+        },
+        {
+          title: 'The finished tool',
+          body: `<p>A searchable construction-market data platform that turns a historical survey dataset into an accessible digital reference, browsable without specialist tooling.</p>
+          <p class="media-note">Screenshots of the search view and a record view are pending — see the asset handoff list.</p>`
+        },
+        {
+          title: 'Deliverables',
+          body: `<ul>
+            <li>Structured survey dataset</li>
+            <li>Searchable, browsable record interface</li>
+            <li>Readable presentation of survey fields</li>
+            <li>Responsive front-end build</li>
+          </ul>`
+        },
+        {
+          title: 'Value',
+          body: `<p><strong>Verified outcome:</strong> a historical industry dataset is available as a usable digital reference rather than an unused file.</p>`
+        }
+      ]
+    }
+  }
+];
+
+/* ---------- 2. MORE-WORK GALLERY ---------- */
+const GALLERY = [
+  { id:'nure-works',        title:'NURE·WORKS — Furniture & Metalwork', category:'Websites', image:'nure-works.png', alt:'NURE·WORKS furniture and metalwork catalogue', live:'https://guledz.github.io/Furniture-metalwork/', year:'2024' },
+  { id:'medical-equipment', title:'Medical Equipment Supplier',         category:'Websites', image:'medical-equipment-supplier.png', alt:'Medical equipment supplier website', live:'https://guledz.github.io/Medical-equipment-supplier/', year:'2024' },
+  { id:'makona-coffee',     title:'Makona Coffee Export',               category:'Websites', image:'makona-coffee-export.png', alt:'Makona Coffee Export website', live:'https://guledz.github.io/MakonaCoffeeexport/', year:'2025' },
+  { id:'wab-construction',  title:'WAB Construction Company',           category:'Websites', image:'wab-construction-company.png', alt:'WAB Construction company website', live:'https://guledz.github.io/Wab-Construction-company/', year:'' },
+  { id:'makanis-oromoo',    title:'Makanis Oromoo Municipality',        category:'Websites', image:'makanis-oromoo-municipality.png', alt:'Makanis Oromoo municipality website', live:'https://guledz.github.io/Makanis-oromoo-muncipality-/', year:'' },
+  { id:'amud-motel',        title:'Amud Motel Command Center',          category:'Websites', image:'amud-motel-command-center.png', alt:'Amud Motel operations interface', live:'https://guledz.github.io/Amud-Motel-Command-Center-/', year:'' },
+  { id:'harar-city',        title:'Harar City Digital Visibility Initiative', category:'Websites', image:'harar-city-digital-visibility-initiative.png', alt:'Harar City digital visibility initiative website', live:'https://guledz.github.io/Harar-City-Digital-Visibility-Initiative/', year:'' },
+  { id:'shaggaa',           title:'SHAGGAA Street Wear Fitted',         category:'Websites', image:'shaggaa-street-wear-fitted.png', alt:'SHAGGAA streetwear collection website', live:'https://guledz.github.io/Shaggaa-street-wear-fitted-/', year:'2026' },
+  { id:'muummee',           title:'Muummee Fitted Cap',                 category:'Websites', image:'muummee-street-wear-fitted-cap.png', alt:'Muummee street wear fitted cap product page', live:'https://guledz.github.io/Muummee-street-wear-fitted-cap-/', year:'' },
+
+  { id:'smart-tools',       title:'Smart Tools',                        category:'Digital Tools', image:'smart-tools.png', alt:'Smart Tools web utilities', live:'https://guledz.github.io/Smart-tools/', year:'' },
+  { id:'upms',              title:'Universal Project Master System',     category:'Digital Tools', image:'universal-project-master-system.png', alt:'Universal Project Master System interface', live:'https://guledz.github.io/Universal-Project-Master-System/', year:'2025' },
+  { id:'pm-workflow',       title:'Product Management Workflow',        category:'Digital Tools', image:'product-management-workflow.png', alt:'Product management workflow system', live:'https://guledz.github.io/Product-management-workflow-/', year:'' },
+  { id:'bg-youtube',        title:'Background YouTube Player',          category:'Digital Tools', image:'background-youtube-player.png', alt:'Background YouTube player utility', live:'https://guledz.github.io/Background-YouTube-player-/', year:'' },
+  { id:'adal-dashboard',    title:'Adal Digital Marketing Dashboard',   category:'Digital Tools', image:'adal-digital-marketing-dashboard.png', alt:'Adal digital marketing dashboard', live:'https://guledz.github.io/adal-digital-marketing-dashboard/', year:'' },
+  { id:'portfolio-readiness', title:'Portfolio Readiness Command Center', category:'Digital Tools', image:'portfolio-readiness-command-center.png', alt:'Portfolio readiness command center interface', live:'https://guledz.github.io/Portfolio-Readiness-Command-Center/', year:'' },
+
+  { id:'abdulhamid-edits',  title:'Abdulhamid Hassen — Portfolio',      category:'Profiles & Presentations', image:'abdulhamid-edits-portfolio.png', alt:'Abdulhamid Hassen video editor portfolio', live:'https://abdulhamidedits.com', year:'' },
+  { id:'professional-portfolio', title:'Guled Hassen — Professional Portfolio', category:'Profiles & Presentations', image:'guled-hassen-professional-portfolio.png', alt:'Guled Hassen professional portfolio', live:'https://guledz.github.io/Guled-Hassen-Professional-Portfolio/', year:'' }
+];
+
+/* ---------- 3. ARCHIVE (preserved, not rendered) ----------
+   Original project records from the previous version of this page.
+   Kept so nothing is lost. Several entries were consolidated into
+   single gallery items or moved out of the showcase because they
+   duplicate the live site or have no distinctive preview.
+
+   { id:'guledhassen',                     image:'guledhassen.png',                     live:'https://guledz.github.io/Guledhassen/' }
+   { id:'guledhassenwebdev',               image:'guledhassenwebdev.png',               live:'https://guledz.github.io/Guledhassenwebdev/' }
+   { id:'portfolio',                       image:'portfolio.png',                       live:'https://guledz.github.io/Portfolio/' }
+   { id:'mycv',                            image:'mycv.png',                            live:'https://guledz.github.io/Mycv/' }
+   { id:'opentowork',                      image:'opentowork.png',                      live:'https://guledz.github.io/Opentowork/' }
+   { id:'progress-document',               image:'progress-document.png',               live:'https://guledz.github.io/Progressdocument-/' }
+   { id:'special-octo-guide',              image:'special-octo-guide.png',              live:'https://guledz.github.io/special-octo-guide/' }
+   { id:'adal-digital-embassy',            image:'adal-digital-embassy.png',            live:'https://guledz.github.io/Adal-digital-embassy-/' }
+   { id:'adal-art',                        image:'adal-art.png',                        live:'https://guledz.github.io/Adal-art/' }
+   { id:'street-wear',                     image:'street-wear.png',                     live:'https://guledz.github.io/Street-wear/' }
+   { id:'portfolio-dashboard (this site)', image:'portfolio-dashboard.png',             live:'https://guledz.github.io/Guledhassen/' }
+-------------------------------------------------------------- */
+
+/* ============================================================
+   MEDIA RENDERERS
+   ============================================================ */
+function mediaHTML(item, { ratioClass = 'media--wide', loading = 'lazy', mark = '' } = {}) {
+  if (item.logo) {
+    return `<div class="media media--logo ${ratioClass}" style="--logo-bg:${esc(item.logoBg || '#FFFFFF')}">
+      <img src="${esc(item.logo)}"
+           alt="${esc(item.logoAlt || item.title + ' logo')}"
+           width="900" height="500"
+           loading="${loading}" decoding="async"
+           data-fallback="${esc(item.logoAlt || item.title)}"
+           data-mark="${esc(mark)}">
+    </div>`;
+  }
+  if (item.image) {
+    return `<div class="media ${ratioClass}">
+      <img src="${esc(item.image)}"
+           alt="${esc(item.imageAlt || item.title)}"
+           width="1200" height="750"
+           loading="${loading}" decoding="async"
+           data-fallback="${esc(item.imageAlt || item.title)}"
+           data-mark="${esc(mark)}">
+    </div>`;
+  }
+  return `<div class="media media--placeholder ${ratioClass}" role="img"
+               aria-label="${esc(item.title)} — preview pending">
+    <span class="ph-mark">${esc(item.placeholderMark || mark || '—')}</span>
+    <span class="ph-note">${esc(item.placeholderNote || 'Preview pending')}</span>
+  </div>`;
+}
+
+/* Broken / missing images fall back to a labelled placeholder,
+   never to a fabricated screenshot. */
+document.addEventListener('error', (e) => {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement) || img.dataset.fallback === undefined) return;
+  const el = document.createElement('div');
+  el.className = 'media media--placeholder';
+  el.setAttribute('role', 'img');
+  el.setAttribute('aria-label', `${img.dataset.fallback} — preview pending`);
+  el.innerHTML = `<span class="ph-mark">${esc(img.dataset.mark || '—')}</span>
+                  <span class="ph-note">Preview pending</span>`;
+  img.replaceWith(el);
+}, true);
+
+/* ============================================================
+   RENDER — LEAD + SECONDARY PROJECTS
+   ============================================================ */
+function renderProjects() {
+  const leads = PROJECTS.filter(p => p.tier === 'lead');
+  const secondary = PROJECTS.filter(p => p.tier === 'secondary');
+
+  $('#leadProjects').innerHTML = leads.map((p, i) => {
+    const split = i % 2 === 1;
+    return `
+      <article class="project ${split ? 'project--split' : ''}" aria-labelledby="t-${esc(p.id)}">
+        <div class="project-media-cell">
+          <a class="project-media"
+             href="${p.live ? esc(p.live) : '#/work/' + esc(p.id)}"
+             ${p.live ? 'target="_blank" rel="noopener noreferrer"' : ''}
+             aria-label="${p.live ? 'Open ' + esc(p.title) + ' (opens in a new tab)' : 'Read the ' + esc(p.title) + ' case study'}">
+            ${mediaHTML(p, { ratioClass: split ? 'media--4x3' : 'media--wide', loading: i === 0 ? 'eager' : 'lazy', mark: p.index })}
+          </a>
+          ${p.mediaNote ? `<p class="media-note">${esc(p.mediaNote)}</p>` : ''}
+        </div>
+
+        <div class="project-body">
+          <div>
+            <span class="project-index">${esc(p.index)}</span>
+            <h3 class="project-title" id="t-${esc(p.id)}">${esc(p.title)}</h3>
+            <p class="project-sub">${esc(p.subtitle)}</p>
+            <p class="project-value">${esc(p.value)}</p>
+            <p class="project-need"><strong>Business need.</strong> ${esc(p.need)}</p>
+          </div>
+
+          <div>
+            <dl class="facts">
+              <div><dt>Role</dt><dd>${esc(p.role)}</dd></div>
+              <div><dt>Scope</dt><dd>${p.scope.map(esc).join(' · ')}</dd></div>
+              <div><dt>Year</dt><dd>${esc(p.year)} ${p.yearVerified ? '' : '<span class="flag">unconfirmed</span>'}</dd></div>
+            </dl>
+            <div class="project-actions">
+              <a class="btn btn-ink" href="#/work/${esc(p.id)}">View Case Study</a>
+              ${p.live ? `<a class="btn btn-outline" href="${esc(p.live)}" target="_blank" rel="noopener noreferrer">Visit Website ↗</a>` : ''}
+            </div>
+          </div>
+        </div>
+      </article>`;
+  }).join('');
+
+  $('#secondaryProjects').innerHTML = secondary.map(p => `
+    <article class="pair-item">
+      <a class="project-media" href="#/work/${esc(p.id)}" aria-label="Read the ${esc(p.title)} case study">
+        ${mediaHTML(p, { ratioClass: 'media--3x2', mark: p.placeholderMark || '' })}
+      </a>
+      <p class="eyebrow" style="color:var(--accent-ink)">${esc(p.category)}${p.concept ? ' · Concept' : ''}</p>
+      <h3>${esc(p.title)}</h3>
+      <p>${esc(p.value)}</p>
+      <div class="pair-links">
+        <a class="link-arrow" href="#/work/${esc(p.id)}">View Case Study →</a>
+        ${p.live ? `<a class="link-arrow" href="${esc(p.live)}" target="_blank" rel="noopener noreferrer">Visit Website ↗</a>` : ''}
+      </div>
+    </article>`).join('');
+}
+
+/* ============================================================
+   RENDER — MORE-WORK GALLERY
+   ============================================================ */
+const GALLERY_FILTERS = [
+  { id: 'all', label: 'All' },
+  { id: 'Websites', label: 'Websites' },
+  { id: 'Digital Tools', label: 'Digital Tools' },
+  { id: 'Profiles & Presentations', label: 'Profiles & Presentations' }
+];
+
+let galleryFilter = 'all';
+
+function renderFilterBar() {
+  $('#filterBar').innerHTML = GALLERY_FILTERS.map(f => `
+    <button type="button" class="filter-btn" data-filter="${esc(f.id)}"
+            aria-pressed="${f.id === galleryFilter}">${esc(f.label)}</button>`).join('');
+}
+
+function renderGallery() {
+  const list = galleryFilter === 'all'
+    ? GALLERY
+    : GALLERY.filter(p => p.category === galleryFilter);
+
+  const grid = $('#gallery');
+  const count = $('#resultCount');
+
+  if (!list.length) {
+    grid.innerHTML = `<p class="empty-state">No projects in this category yet.</p>`;
+    count.textContent = '0 projects';
+    return;
+  }
+
+  grid.innerHTML = list.map(p => `
+    <article class="gcard">
+      <a href="${esc(p.live)}" target="_blank" rel="noopener noreferrer"
+         aria-label="Open ${esc(p.title)} (opens in a new tab)">
+        ${mediaHTML({ title: p.title, image: p.image, imageAlt: p.alt }, { ratioClass: 'media--3x2', mark: '' })}
+        <h3>${esc(p.title)}</h3>
+      </a>
+      <p class="gmeta">
+        <span>${esc(p.category)}</span>
+        ${p.year ? `<span>${esc(p.year)}</span>` : ''}
+      </p>
+    </article>`).join('');
+
+  const label = GALLERY_FILTERS.find(f => f.id === galleryFilter)?.label || 'All';
+  count.textContent = galleryFilter === 'all'
+    ? `${list.length} projects`
+    : `${list.length} in ${label}`;
+}
+
+$('#filterBar').addEventListener('click', (e) => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  galleryFilter = btn.dataset.filter;
+  $$('.filter-btn', $('#filterBar')).forEach(b =>
+    b.setAttribute('aria-pressed', String(b === btn)));
+  renderGallery();
+});
+
+/* ============================================================
+   CASE STUDY RENDERER
+   ============================================================ */
+const CASE_PROJECTS = PROJECTS.filter(p => p.caseStudy);
+
+function renderCaseStudy(id) {
+  const p = PROJECTS.find(x => x.id === id);
+  if (!p || !p.caseStudy) return false;
+
+  const cs = p.caseStudy;
+  const homeView = $('#homeView');
+  const caseView = $('#caseView');
+
+  const idx = CASE_PROJECTS.findIndex(x => x.id === id);
+  const next = CASE_PROJECTS[(idx + 1) % CASE_PROJECTS.length];
+
+  caseView.innerHTML = `
+    <div class="container case-wrap">
+      <a class="back-link" href="#work">← All work</a>
+
+      <header class="case-head">
+        <p class="eyebrow">${esc(p.category)}${p.concept ? ' · Independent concept' : ''}</p>
+        <h1 class="case-title" tabindex="-1" id="caseHeading">${esc(cs.title)}</h1>
+        <p class="case-value">${esc(cs.value)}</p>
+      </header>
+
+      <figure class="case-hero">
+        ${mediaHTML(p, { ratioClass: 'media--wide', loading: 'eager', mark: p.index || p.placeholderMark || '' })}
+        ${p.mediaNote ? `<figcaption class="media-note">${esc(p.mediaNote)}</figcaption>` : ''}
+      </figure>
+
+      <dl class="case-facts">
+        ${cs.facts.map(f => `<div><dt>${esc(f.label)}</dt><dd>${f.value}</dd></div>`).join('')}
+      </dl>
+
+      ${cs.sections.map(s => `
+        <section class="case-section">
+          <h2>${esc(s.title)}</h2>
+          <div class="case-body">${s.body}</div>
+        </section>`).join('')}
+
+      <div class="case-actions">
+        ${p.live ? `<a class="btn btn-ink" href="${esc(p.live)}" target="_blank" rel="noopener noreferrer">Visit Website ↗</a>` : ''}
+        <a class="btn btn-outline" href="#contact">Discuss a Project</a>
+        <a class="btn btn-outline" href="#work">Back to Work</a>
+      </div>
+
+      <a class="case-next" href="#/work/${esc(next.id)}">
+        <span>
+          <span>Next project</span>
+          <strong>${esc(next.title)}</strong>
+        </span>
+        <span aria-hidden="true" style="font-size:1.5rem;color:var(--accent-ink)">→</span>
+      </a>
+    </div>`;
+
+  homeView.hidden = true;
+  caseView.hidden = false;
+
+  document.title = `${cs.title} — Guled Hassen`;
+  $('#siteHeader').classList.add('is-case');
+  window.scrollTo({ top: 0, behavior: 'auto' });
+
+  const heading = $('#caseHeading');
+  if (heading) heading.focus({ preventScroll: true });
+
+  return true;
+}
+
+function showHome() {
+  const homeView = $('#homeView');
+  const caseView = $('#caseView');
+  if (!homeView.hidden) return;
+  caseView.hidden = true;
+  caseView.innerHTML = '';
+  homeView.hidden = false;
+  document.title = 'Guled Hassen — Brand & Digital Product Designer';
+  $('#siteHeader').classList.remove('is-case');
+}
+
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const header = $('#siteHeader');
+  const offset = (header ? header.offsetHeight : 64) + 16;
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+}
+
+/* ============================================================
+   ROUTER
+   Case studies use hash routes (#/work/<id>) so a URL can be
+   opened directly or refreshed on GitHub Pages without a server.
+   ============================================================ */
+function router() {
+  const hash = location.hash || '';
+  const match = hash.match(/^#\/work\/([A-Za-z0-9_-]+)$/);
+
+  if (match) {
+    const ok = renderCaseStudy(match[1]);
+    if (ok) return;
+  }
+
+  showHome();
+
+  if (hash && hash.length > 1 && !hash.startsWith('#/')) {
+    const id = hash.slice(1);
+    /* Let the home view become visible before scrolling to the anchor. */
+    requestAnimationFrame(() => scrollToSection(id));
+  }
+}
+
+window.addEventListener('hashchange', router);
+
+/* ============================================================
+   ACTIVE NAV STATE (home view only)
+   ============================================================ */
+function initActiveNav() {
+  const ids = ['work', 'services', 'about', 'contact'];
+  const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
+  const links = new Map($$('[data-nav]').map(a => [a.dataset.nav, a]));
+
+  const setActive = (id) => {
+    links.forEach((link, key) => {
+      if (key === id) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+  };
+
+  if (!('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    if (!$('#homeView').hidden === false) return;
+    const visible = entries
+      .filter(en => en.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: [0, .2, .5, 1] });
+
+  sections.forEach(s => observer.observe(s));
+}
+
+/* ============================================================
+   HEADER SCROLL STATE
+   ============================================================ */
+(function initHeader() {
+  const header = $('#siteHeader');
+  if (!header) return;
+  const set = () => header.classList.toggle('is-scrolled', window.scrollY > 20);
+  set();
+  window.addEventListener('scroll', set, { passive: true });
+})();
+
+/* ============================================================
+   INIT
+   ============================================================ */
+renderProjects();
+renderFilterBar();
+renderGallery();
+initActiveNav();
+router();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Guled Hassen",
+  "jobTitle": "Brand & Digital Product Designer",
+  "url": "https://guledz.github.io/Guledhassen/",
+  "email": "mailto:Guledh918@gmail.com",
+  "telephone": "+251915415011",
+  "address": { "@type": "PostalAddress", "addressLocality": "Harar", "addressCountry": "ET" },
+  "sameAs": [
+    "https://github.com/guledz",
+    "https://www.linkedin.com/in/guled-hassen-b11636250"
+  ],
+  "description": "Brand and digital product designer and web developer based in Harar, Ethiopia. Brand identities, websites, digital catalogues and practical digital tools for real businesses."
+}
+</script>
+
+</body>
+</html>
