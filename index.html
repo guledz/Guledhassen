@@ -940,6 +940,9 @@ button{font:inherit;color:inherit}
     transition-duration:.01ms!important;
   }
 }
+
+.studio-section{--st-ink:#15161a;--st-soft:#5b5750;--st-line:#d5ccbe;background:#f4efe6;color:var(--st-ink);padding:80px 0;font-family:Arial,Helvetica,sans-serif;line-height:1.7}.studio-wrap{width:90%;max-width:1200px;margin:auto}.studio-section h2{font-family:Georgia,serif;font-size:clamp(38px,5vw,68px);font-weight:400;letter-spacing:-1.5px;line-height:1.08;margin:20px 0 32px}.studio-section h3{font-family:Georgia,serif;font-weight:400;font-size:28px;line-height:1.25;margin:0 0 18px}.studio-section h4{font-size:18px;line-height:1.35;margin:0 0 12px}.studio-section p{font-size:15px;color:var(--st-soft);margin:0 0 16px;max-width:none}.studio-section .studio-kicker{font-size:10px;font-weight:700;letter-spacing:2px;color:#705b44}.studio-subnav{display:flex;flex-wrap:wrap;gap:12px 28px;border-top:1px solid var(--st-line);border-bottom:1px solid var(--st-line);padding:18px 0}.studio-section a{font-size:13px;text-decoration:none;text-underline-offset:5px}.studio-section a:hover{text-decoration:underline}.studio-intro{display:grid;grid-template-columns:1fr 2fr;gap:40px;padding:55px 0 25px}.studio-principles{display:grid;grid-template-columns:1fr 1fr;gap:20px}.studio-principles article{padding:32px;background:#fffcf7;border:1px solid var(--st-line)}.studio-principles .studio-mission{grid-column:1/-1;background:#15161a;color:#f4efe6;padding:42px}.studio-mission h3{font-size:clamp(26px,3.5vw,42px);max-width:850px;margin:0}.studio-mission .studio-kicker{color:#d9c9b4}.studio-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.studio-services article{padding-top:20px;border-top:1px solid var(--st-line)}.studio-languages{margin:40px 0 65px;border-block:1px solid var(--st-line);padding:26px 0}.studio-languages p:last-child{font-size:20px;color:var(--st-ink);margin:0}.studio-languages span{color:#8a785e;margin:0 8px}.studio-heading{margin-bottom:30px}.studio-team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.studio-person{background:#fffcf7;border:1px solid var(--st-line);padding:28px;display:flex;flex-direction:column;align-items:start}.studio-initials{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#e9e2d5;font-family:Georgia,serif;font-size:21px;margin-bottom:24px}.studio-person .studio-role{font-size:11px;font-weight:bold;color:#705b44;min-height:36px}.studio-person a,.studio-handle{margin-top:auto;padding-top:16px;font-size:13px}.studio-network{display:grid;grid-template-columns:1.4fr 1fr;gap:55px;border-top:1px solid var(--st-line);padding-top:55px;margin-top:65px}.studio-links{display:flex;flex-direction:column;justify-content:center}.studio-links a{padding:18px 0;border-bottom:1px solid var(--st-line)}.studio-signoff{padding-top:40px;font-family:Georgia,serif;font-size:25px!important;color:var(--st-ink)!important}.studio-section :focus-visible{outline:3px solid #705b44;outline-offset:5px}.studio-section [id]{scroll-margin-top:95px}@media(max-width:800px){.studio-team,.studio-services{grid-template-columns:repeat(2,minmax(0,1fr))}.studio-intro,.studio-network{grid-template-columns:1fr;gap:16px}}@media(max-width:520px){.studio-section{padding:48px 0}.studio-principles,.studio-team,.studio-services{grid-template-columns:1fr}.studio-principles article,.studio-principles .studio-mission{padding:25px}.studio-subnav{gap:12px 20px}.studio-person .studio-role{min-height:0}.studio-network{gap:20px}}
+
 </style>
 </head>
 
@@ -960,6 +963,7 @@ button{font:inherit;color:inherit}
       <a href="#work" data-nav="work">Work</a>
       <a href="#services" data-nav="services">Services</a>
       <a href="#about" data-nav="about">About</a>
+      <a href="#studio" data-nav="studio">Studio & Team</a>
       <a href="#contact" data-nav="contact">Contact</a>
     </nav>
   </div>
@@ -982,7 +986,7 @@ button{font:inherit;color:inherit}
         <div class="hero-foot">
           <p class="hero-lede">
             I’m Guled Hassen, a designer and web developer based in Harar, Ethiopia.
-            I create brand identities, websites, and practical digital tools.
+            I create brand identities, websites, and practical digital tools, and bring together a family team of design, media and language professionals.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#work">View Selected Work</a>
@@ -1112,8 +1116,8 @@ button{font:inherit;color:inherit}
 
           <div class="about-copy">
             <p>
-              I was born in Harar, Ethiopia in 1994 and trained as an
-              <strong>engineer</strong>, graduating in 2016. Since then I have
+              I was born in Harar, Ethiopia in 1994 and trained as a
+              <strong>mechanical engineer</strong>, graduating in 2016. Since then I have
               worked as a contractor, run a bakery business and worked in a
               municipality office — three very different organisations with the
               same recurring problem: information that is hard to find, hard to
@@ -1137,7 +1141,9 @@ button{font:inherit;color:inherit}
 
             <ul class="about-facts">
               <li>Based in Harar, Ethiopia</li>
-              <li>Engineering graduate, 2016</li>
+              <li>Mechanical engineering graduate, 2016</li>
+              <li>English &amp; Arabic communication</li>
+              <li>Founder of a family-built creative studio</li>
               <li>Brand · Web · Digital products</li>
               <li>End-to-end delivery</li>
             </ul>
@@ -1148,6 +1154,17 @@ button{font:inherit;color:inherit}
       </div>
     </section>
 
+<section class="studio-section" id="studio" aria-labelledby="studio-title"><div class="studio-wrap">
+<p class="studio-kicker">THE PEOPLE BEHIND THE WORK</p><h2 id="studio-title">Built by family.<br>Connected by purpose.</h2>
+<nav class="studio-subnav" aria-label="Studio sections"><a href="#who-we-are">Who we are</a><a href="#mission">Mission & vision</a><a href="#team">Team</a><a href="#connections">Connections</a></nav>
+<div class="studio-intro" id="who-we-are"><h3>Who we are</h3><div><p>We are a family-built creative and digital studio founded by Guled Hassen in Harar, Ethiopia. We bring together branding, motion design, programming, photography and video production with experienced journalism and multilingual communication.</p><p>Our team includes journalism professionals with more than 30 years of experience. We combine that editorial care with modern creative tools, disciplined delivery and attention to the details that make a business credible.</p></div></div>
+<div class="studio-principles"><article class="studio-mission" id="mission"><p class="studio-kicker">OUR MISSION</p><h3>We help businesses become easier for customers to find and suppliers to verify.</h3></article><article id="vision"><p class="studio-kicker">OUR VISION</p><h3>Local businesses, confidently connected.</h3><p>A future where businesses can present themselves clearly, communicate across languages and participate confidently in wider markets.</p></article><article id="goals"><p class="studio-kicker">OUR GOAL</p><h3>Turn visibility into lasting relationships.</h3><p>Build recognizable brands and credible digital presences that support customer enquiries, supplier confidence and sustainable business growth.</p></article></div>
+<div class="studio-intro"><h3>What we offer</h3><p>One coordinated team for the words, visuals and technology your business needs. Clear information helps people understand what you offer, locate your business and decide how to work with you.</p></div>
+<div class="studio-services"><article><h4>Brand & design</h4><p>Brand identities, logos, vector artwork, packaging and marketing materials.</p></article><article><h4>Motion & production</h4><p>Motion design, video editing, directing, photography and Photoshop retouching.</p></article><article><h4>Web & digital products</h4><p>Websites, digital catalogues, business applications and practical programming.</p></article><article><h4>Language & communication</h4><p>Copywriting, translation, localization, editorial review and business profiles.</p></article><article><h4>Business visibility</h4><p>Google Maps listings, consistent contact information and supplier introductions.</p></article><article><h4>Product presentation</h4><p>Clear product information, organized image assets and explicitly labelled digital visualizations.</p></article></div>
+<div class="studio-languages"><p class="studio-kicker">SIX LANGUAGES · MORE WAYS TO CONNECT</p><p>English <span>·</span> Amharic <span>·</span> Arabic <span>·</span> Afaan Oromo <span>·</span> Somali <span>·</span> Harari</p></div>
+<div class="studio-heading" id="team"><p class="studio-kicker">OUR TEAM</p><h3>Different disciplines. Shared care.</h3><p>Design and digital delivery meet experienced media and language professionals.</p></div><div class="studio-team"><article class="studio-person"><span class="studio-initials" aria-hidden="true">GH</span><h4>Guled Hassen</h4><p class="studio-role">Founder · Brand &amp; Digital Products</p><p>Mechanical engineering graduate and entrepreneur combining brand concepts, web development and digital product design. Leads project coordination and business development.</p><a href="https://guledz.github.io/Guledhassen/" target="_blank" rel="noopener noreferrer">View portfolio ↗</a></article><article class="studio-person"><span class="studio-initials" aria-hidden="true">JH</span><h4>Jammi Hassen</h4><p class="studio-role">Graphic Design · Motion · Architecture</p><p>Graphic designer, motion designer and architect contributing visual identities, vector artwork, animation and spatial thinking.</p><a href="https://www.linkedin.com/in/jami-hassen" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></article><article class="studio-person"><span class="studio-initials" aria-hidden="true">HA</span><h4>Hassen Ahmed</h4><p class="studio-role">Journalism · Management · Media</p><p>Journalist, management professional and private media contractor with more than 30 years of experience. Brings editorial judgment, media coordination and communication expertise.</p><a href="https://www.facebook.com/share/1XGzCaqoTR/" target="_blank" rel="noopener noreferrer">Facebook profile ↗</a></article><article class="studio-person"><span class="studio-initials" aria-hidden="true">MM</span><h4>Meryema Mahmud</h4><p class="studio-role">Somali Journalism · Human Resources</p><p>Journalist and human resources manager with more than 30 years of professional Somali-language radio journalism. Contributes language expertise, editorial review and people management.</p><a href="https://www.facebook.com/share/1FCtYm9qPg/" target="_blank" rel="noopener noreferrer">Facebook profile ↗</a></article><article class="studio-person"><span class="studio-initials" aria-hidden="true">AH</span><h4>Abdul Hamid Hassen</h4><p class="studio-role">Video Editing · Director of Photography</p><p>Video editor, Photoshop specialist and director of photography working across cinematography, image editing and visual storytelling.</p><span class="studio-handle">@visionforward77</span></article></div>
+<div class="studio-network" id="connections"><div><p class="studio-kicker">CONNECTIONS & NETWORKS</p><h3>Start with the people.<br>See the work.</h3><p>Explore our team’s professional profiles above, or connect with Guled to discuss a project, supplier presentation or creative collaboration. Our work connects local businesses with customers, suppliers and multilingual audiences.</p></div><div class="studio-links"><a href="https://guledz.github.io/Guledhassen/" target="_blank" rel="noopener noreferrer">Guled’s portfolio ↗</a><a href="https://github.com/guledz" target="_blank" rel="noopener noreferrer">Development projects ↗</a><a href="https://www.linkedin.com/in/guled-hassen-b11636250" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a href="mailto:Guledh918@gmail.com?subject=Studio%20project%20enquiry">Discuss a project ↗</a></div></div>
+<p class="studio-signoff">Get found. Be understood. Build trust.</p></div></section>
     <!-- ---------- MORE WORK ---------- -->
     <section class="section paper" id="more" aria-labelledby="more-title">
       <div class="container">
@@ -1829,7 +1846,7 @@ window.addEventListener('hashchange', router);
    ACTIVE NAV STATE (home view only)
    ============================================================ */
 function initActiveNav() {
-  const ids = ['work', 'services', 'about', 'contact'];
+  const ids = ['work', 'services', 'about', 'studio', 'contact'];
   const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
   const links = new Map($$('[data-nav]').map(a => [a.dataset.nav, a]));
 
